@@ -1,0 +1,25 @@
+{
+	"$id": "https://cs548.stevens.edu/clinic/patient",
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"description": "JSON Schema for patients",
+	"type" : "object",
+	"properties" : {
+		"id": {
+			"type": "string",
+			"format": "uuid"
+		},
+		"name": {
+			"type": "string"
+		},
+		"dob": {
+			"type": "string",
+			"format": "date"
+		},
+		"treatments" : {
+			"type": "array",
+			"items": { "$ref" :  "https://cs548.stevens.edu/clinic/treatment" }
+		}
+	},
+	"required": [ "id", "name", "dob", "treatments" ],
+	"additionalProperties": false
+}

@@ -1,0 +1,39 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: clinic-domain
+  labels:
+    app: clinic-domain
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: clinic-domain
+  template:
+    metadata:
+      labels:
+        app: clinic-domain
+    spec:
+      restartPolicy: Always
+      affinity:
+        nodeAffinity:
+          requiredDuringSchedulingIgnoredDuringExecution:
+            nodeSelectorTerms:
+            - matchExpressions:
+              - key: kubernetes.io/arch
+                operator: In
+                values:
+                - amd64
+      containers:
+      - name: clinic-domain
+        image: 466942225965.dkr.ecr.us-east-2.amazonaws.com/clinic-domain
+        env:
+        - name: DATABASE_USERNAME
+          value: "cs548user"
+        - name: DATABASE_PASSWORD
+          value: "0000"
+        - name: DATABASE
+          value: "cs548"
+        - name: DATABASE_HOST
+          value: "ihu-db.cil2kk2r12yz.us-east-2.rds.amazonaws.com"
+        imagePullPolicy: Always

@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: clinic-webapp
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: clinic-webapp
+  template:
+    metadata:
+      labels:
+        app: clinic-webapp
+    spec:
+      restartPolicy: Always
+      affinity:
+        nodeAffinity:
+          requiredDuringSchedulingIgnoredDuringExecution:
+            nodeSelectorTerms:
+            - matchExpressions:
+              - key: kubernetes.io/arch
+                operator: In
+                values:
+                - amd64
+      containers:
+      - name: clinic-webapp
+        image: 466942225965.dkr.ecr.us-east-2.amazonaws.com/clinic-webapp
+        imagePullPolicy: Always

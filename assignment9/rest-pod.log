@@ -1,0 +1,445 @@
+ihu
+[2023-11-19T22:02:46.359+0000] [] [[1;93mWARNING[0m] [] [[1;94mPayaraMicro[0m] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1700431366359] [levelValue: 900] Payara Micro Runtime directory is located in a temporary file location which can be cleaned by system processes.
+
+[2023-11-19T22:02:46.416+0000] [] [[1;92mINFO[0m] [] [[1;94mPayaraMicro[0m] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1700431366416] [levelValue: 800] Payara Micro Runtime directory is located at /tmp/payaramicro-rt1967814775445472971tmp
+
+[2023-11-19T22:02:46.435+0000] [] [[1;92mINFO[0m] [] [[1;94mfish.payara.micro.boot.runtime.PayaraMicroRuntimeBuilder[0m] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1700431366435] [levelValue: 800] Built Payara Micro Runtime
+
+[2023-11-19T22:02:48.100+0000] [] [[1;92mINFO[0m] [] [[1;94mfish.payara.boot.runtime.BootCommand[0m] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1700431368100] [levelValue: 800] [[
+  Boot Command set returned with result SUCCESS : PlainTextActionReporterSUCCESSDescription: set AdminCommandnull
+    configs.config.server-config.hazelcast-config-specific-configuration.lite=false
+]]
+
+[2023-11-19T22:02:48.182+0000] [] [[1;92mINFO[0m] [] [[1;94mfish.payara.boot.runtime.BootCommand[0m] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1700431368182] [levelValue: 800] [[
+  Boot Command set returned with result SUCCESS : PlainTextActionReporterSUCCESSDescription: set AdminCommandnull
+    hazelcast-runtime-configuration.host-aware-partitioning=true
+]]
+
+[2023-11-19T22:02:48.196+0000] [] [[1;92mINFO[0m] [] [[1;94mfish.payara.boot.runtime.BootCommand[0m] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1700431368196] [levelValue: 800] [[
+  Boot Command set returned with result SUCCESS : PlainTextActionReporterSUCCESSDescription: set AdminCommandnull
+    hazelcast-runtime-configuration.discovery-mode=multicast
+]]
+
+[2023-11-19T22:02:49.160+0000] [] [[1;92mINFO[0m] [] [[1;94morg.glassfish.ha.store.spi.BackingStoreFactoryRegistry[0m] [tid: _ThreadID=25 _ThreadName=RunLevelControllerThread-1700431368218] [timeMillis: 1700431369160] [levelValue: 800] Registered fish.payara.ha.hazelcast.store.HazelcastBackingStoreFactoryProxy for persistence-type = hazelcast in BackingStoreFactoryRegistry
+
+[2023-11-19T22:02:53.374+0000] [] [[1;92mINFO[0m] [] [[1;94mfish.payara.nucleus.hazelcast.HazelcastCore[0m] [tid: _ThreadID=22 _ThreadName=RunLevelControllerThread-1700431368205] [timeMillis: 1700431373374] [levelValue: 800] Hazelcast Instance Bound to JNDI at payara/Hazelcast
+
+[2023-11-19T22:02:53.383+0000] [] [[1;92mINFO[0m] [] [[1;94mfish.payara.nucleus.hazelcast.HazelcastCore[0m] [tid: _ThreadID=22 _ThreadName=RunLevelControllerThread-1700431368205] [timeMillis: 1700431373383] [levelValue: 800] JSR107 Caching Provider Bound to JNDI at payara/CachingProvider
+
+[2023-11-19T22:02:53.384+0000] [] [[1;92mINFO[0m] [] [[1;94mfish.payara.nucleus.hazelcast.HazelcastCore[0m] [tid: _ThreadID=22 _ThreadName=RunLevelControllerThread-1700431368205] [timeMillis: 1700431373384] [levelValue: 800] JSR107 Default Cache Manager Bound to JNDI at payara/CacheManager
+
+[2023-11-19T22:02:53.648+0000] [] [[1;92mINFO[0m] [NCLS-CORE-00101] [[1;94mjavax.enterprise.system.core[0m] [tid: _ThreadID=22 _ThreadName=RunLevelControllerThread-1700431368205] [timeMillis: 1700431373648] [levelValue: 800] Network Listener http-listener started in: 19ms - bound to [/0.0.0.0:8080]
+
+[2023-11-19T22:02:53.649+0000] [] [[1;92mINFO[0m] [NCLS-CORE-00058] [[1;94mjavax.enterprise.system.core[0m] [tid: _ThreadID=22 _ThreadName=RunLevelControllerThread-1700431368205] [timeMillis: 1700431373649] [levelValue: 800] Network listener https-listener on port 8443 disabled per domain.xml
+
+[2023-11-19T22:02:53.650+0000] [] [[1;92mINFO[0m] [NCLS-CORE-00087] [[1;94mjavax.enterprise.system.core[0m] [tid: _ThreadID=22 _ThreadName=RunLevelControllerThread-1700431368205] [timeMillis: 1700431373650] [levelValue: 800] Grizzly 4.0.0 started in: 4,797ms - bound to [http-listener:8080]
+
+[2023-11-19T22:02:53.826+0000] [] [[1;92mINFO[0m] [] [[1;94mfish.payara.nucleus.cluster.PayaraCluster[0m] [tid: _ThreadID=71 _ThreadName=Executor-Service-2] [timeMillis: 1700431373826] [levelValue: 800] [[
+  Data Grid Status 
+Payara Data Grid State: DG Version: 5 DG Name: development DG Size: 1
+Instances: {
+ DataGrid: development Name: Sparkling-Dab Lite: false This: true UUID: a3e6ea9d-2b35-46ca-abed-fc6646ec65cd Address: /192.168.10.221:6900
+}]]
+
+[2023-11-19T22:02:53.834+0000] [] [[1;92mINFO[0m] [NCLS-CORE-00017] [[1;94mjavax.enterprise.system.core[0m] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1700431373834] [levelValue: 800] Payara Micro 6.2023.2 #badassmicrofish (903) startup time : Embedded (1,764ms), startup services(5,633ms), total(7,397ms)
+
+[2023-11-19T22:02:54.079+0000] [] [[1;92mINFO[0m] [NCLS-JMX-00006] [[1;94mjavax.enterprise.system.jmx[0m] [tid: _ThreadID=86 _ThreadName=Thread-13] [timeMillis: 1700431374079] [levelValue: 800] JMXStartupService has disabled JMXConnector system
+
+[2023-11-19T22:02:55.162+0000] [] [[1;91mSEVERE[0m] [] [[1;94mjavax.enterprise.system.tools.deployment.common[0m] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1700431375162] [levelValue: 1000] Exception while visiting sun.security.util.KnownOIDs
+
+[2023-11-19T22:02:55.408+0000] [] [[1;93mWARNING[0m] [NCLS-SECURITY-05054] [[1;94mjavax.enterprise.system.security.ssl[0m] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1700431375408] [levelValue: 900] [[
+  The SSL certificate with alias cert_97_e_tugra_certification_authority97 has expired: [
+[
+  Version: V3
+  Subject: CN=E-Tugra Certification Authority, OU=E-Tugra Sertifikasyon Merkezi, O=E-Tuğra EBG Bilişim Teknolojileri ve Hizmetleri A.Ş., L=Ankara, C=TR
+  Signature Algorithm: SHA256withRSA, OID = 1.2.840.113549.1.1.11
+
+  Key:  Sun RSA public key, 4096 bits
+  params: null
+  modulus: 925907863761916409295939340272022838512281590831120474730757692207553291969767237036195626489459017348231853241795557249851217130206976446632880875945270654597036905832659041523192702524662364187597853474375518554163192165480120090551612540555067985588920051545071401185548245657395984236130467403484982318772253464584557781352039743741441872236800083673439734698667188885771807277074100174327480627402150462230083774986573889853294044239294820937978328955374377382112413733239442846343725766491183731270686950589320630053200722818736090929558628756149871013397723768628166785948114135272375646447922248901273261631837961610711833018120063730438272326764987738680278307148349891953980396860511943744858927542134688743940583155085513476888083735533359361083727270594915343432163357523686239997134124866129339699066010433601299159013516918879602903008025230482607742486419653630432571117622771043619847802631217196332362308744465125111406751251982799417660588510735193389199145249345848457738622605681990835310621659802576806722991899594907371291390432855751379056824652537268471115418297882023918122926865362323037776845485294279264923241140190728366713936009401951864236159617130548935789858796910181327937014273771901142953205221189
+  public exponent: 65537
+  Validity: [From: Tue Mar 05 12:09:48 GMT 2013,
+               To: Fri Mar 03 12:09:48 GMT 2023]
+  Issuer: CN=E-Tugra Certification Authority, OU=E-Tugra Sertifikasyon Merkezi, O=E-Tuğra EBG Bilişim Teknolojileri ve Hizmetleri A.Ş., L=Ankara, C=TR
+  SerialNumber: [    6a683e9c 519bcb53]
+
+Certificate Extensions: 4
+[1]: ObjectId: 2.5.29.35 Criticality=false
+AuthorityKeyIdentifier [
+KeyIdentifier [
+0000: 2E E3 DB B2 49 D0 9C 54   79 5C FA 27 2A FE CC 4E  ....I..Ty\.'*..N
+0010: D2 E8 4E 54                                        ..NT
+]
+]
+
+[2]: ObjectId: 2.5.29.19 Criticality=true
+BasicConstraints:[
+  CA:true
+  PathLen: no limit
+]
+
+[3]: ObjectId: 2.5.29.15 Criticality=true
+KeyUsage [
+  Key_CertSign
+  Crl_Sign
+]
+
+[4]: ObjectId: 2.5.29.14 Criticality=false
+SubjectKeyIdentifier [
+KeyIdentifier [
+0000: 2E E3 DB B2 49 D0 9C 54   79 5C FA 27 2A FE CC 4E  ....I..Ty\.'*..N
+0010: D2 E8 4E 54                                        ..NT
+]
+]
+
+]
+  Algorithm: [SHA256withRSA]
+  Signature:
+0000: 05 37 3A F4 4D B7 45 E2   45 75 24 8F B6 77 52 E8  .7:.M.E.Eu$..wR.
+0010: 1C D8 10 93 65 F3 F2 59   06 A4 3E 1E 29 EC 5D D1  ....e..Y..>.).].
+0020: D0 AB 7C E0 0A 90 48 78   ED 4E 98 03 99 FE 28 60  ......Hx.N....(`
+0030: 91 1D 30 1D B8 63 7C A8   E6 35 B5 FA D3 61 76 E6  ..0..c...5...av.
+0040: D6 07 4B CA 69 9A B2 84   7A 77 93 45 17 15 9F 24  ..K.i...zw.E...$
+0050: D0 98 13 12 FF BB A0 2E   FD 4E 4C 87 F8 CE 5C AA  .........NL...\.
+0060: 98 1B 05 E0 00 46 4A 82   80 A5 33 8B 28 DC ED 38  .....FJ...3.(..8
+0070: D3 DF E5 3E E9 FE FB 59   DD 61 84 4F D2 54 96 13  ...>...Y.a.O.T..
+0080: 61 13 3E 8F 80 69 BE 93   47 B5 35 43 D2 5A BB 3D  a.>..i..G.5C.Z.=
+0090: 5C EF B3 42 47 CD 3B 55   13 06 B0 09 DB FD 63 F6  \..BG.;U......c.
+00A0: 3A 88 0A 99 6F 7E E1 CE   1B 53 6A 44 66 23 51 08  :...o....SjDf#Q.
+00B0: 7B BC 5B 52 A2 FD 06 37   38 40 61 8F 4A 96 B8 90  ..[R...78@a.J...
+00C0: 37 F8 66 C7 78 90 00 15   2E 8B AD 51 35 53 07 A8  7.f.x......Q5S..
+00D0: 6B 68 AE F9 4E 3C 07 26   CD 08 05 70 CC 39 3F 76  kh..N<.&...p.9?v
+00E0: BD A5 D3 67 26 01 86 A6   53 D2 60 3B 7C 43 7F 55  ...g&...S.`;.C.U
+00F0: 8A BC 95 1A C1 28 39 4C   1F 43 D2 91 F4 72 59 8A  .....(9L.C...rY.
+0100: B9 56 FC 3F B4 9D DA 70   9C 76 5A 8C 43 50 EE 8E  .V.?...p.vZ.CP..
+0110: 30 72 4D DF FF 49 F7 C6   A9 67 D9 6D AC 02 11 E2  0rM..I...g.m....
+0120: 3A 16 25 A7 58 08 CB 6F   53 41 9C 48 38 47 68 33  :.%.X..oSA.H8Gh3
+0130: D1 D7 C7 8F D4 74 21 D4   C3 05 90 7A FF CE 96 88  .....t!....z....
+0140: B1 15 29 5D 23 AB D0 60   A1 12 4F DE F4 17 CD 32  ..)]#..`..O....2
+0150: E5 C9 BF C8 43 AD FD 2E   8E F1 AF E2 F4 98 FA 12  ....C...........
+0160: 1F 20 D8 C0 A7 0C 85 C5   90 F4 3B 2D 96 26 B1 2C  . ........;-.&.,
+0170: BE 4C AB EB B1 D2 8A C9   DB 78 13 0F 1E 09 9D 6D  .L.......x.....m
+0180: 8F 00 9F 02 DA C1 FA 1F   7A 7A 09 C4 4A E6 88 2A  ........zz..J..*
+0190: 97 9F 89 8B FD 37 5F 5F   3A CE 38 59 86 4B AF 71  .....7__:.8Y.K.q
+01A0: 0B B4 D8 F2 70 4F 9F 32   13 E3 B0 A7 57 E5 DA DA  ....pO.2....W...
+01B0: 43 CB 84 34 F2 28 C4 EA   6D F4 2A EF C1 6B 76 DA  C..4.(..m.*..kv.
+01C0: FB 7E BB 85 3C D2 53 C2   4D BE 71 E1 45 D1 FD 23  ....<.S.M.q.E..#
+01D0: 67 0D 13 75 FB CF 65 67   22 9D AE B0 09 D1 09 FF  g..u..eg".......
+01E0: 1D 34 BF FE 23 97 37 D2   39 FA 3D 0D 06 0B B4 DB  .4..#.7.9.=.....
+01F0: 3B A3 AB 6F 5C 1D B6 7E   E8 B3 82 34 ED 06 5C 24  ;..o\......4..\$
+
+]]]
+
+[2023-11-19T22:02:55.429+0000] [] [[1;93mWARNING[0m] [NCLS-SECURITY-05054] [[1;94mjavax.enterprise.system.security.ssl[0m] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1700431375429] [levelValue: 900] [[
+  The SSL certificate with alias cert_122_t_rktrust_elektronik_sertifika_hizmet_sa_lay_c_s__h5122 has expired: [
+[
+  Version: V3
+  Subject: CN=TÜRKTRUST Elektronik Sertifika Hizmet Sağlayıcısı H5, O=TÜRKTRUST Bilgi İletişim ve Bilişim Güvenliği Hizmetleri A.Ş., L=Ankara, C=TR
+  Signature Algorithm: SHA256withRSA, OID = 1.2.840.113549.1.1.11
+
+  Key:  Sun RSA public key, 2048 bits
+  params: null
+  modulus: 20721377246514367563605178619245714000909347889058872052522999502285159690767758422928664945631082901107138581598891539594009897753638962565517793764496705010157646265801963977234702978947940139940436661836018656037689891521109279394476149705022231702793379503370501623433916464946495347881225603819935014819158746410970414669132035197071218974299052756704526356034152912018525310215393993048991487777692565138509938057097499372856627277565069781582641378329296127042977004011991662454933709367833119961479844058573781954889837169338368688068324984635685760321236418143304246757405278580379076509554522300540333347817
+  public exponent: 65537
+  Validity: [From: Tue Apr 30 08:07:01 GMT 2013,
+               To: Fri Apr 28 08:07:01 GMT 2023]
+  Issuer: CN=TÜRKTRUST Elektronik Sertifika Hizmet Sağlayıcısı H5, O=TÜRKTRUST Bilgi İletişim ve Bilişim Güvenliği Hizmetleri A.Ş., L=Ankara, C=TR
+  SerialNumber: [    8e17fe24 2081]
+
+Certificate Extensions: 3
+[1]: ObjectId: 2.5.29.19 Criticality=true
+BasicConstraints:[
+  CA:true
+  PathLen: no limit
+]
+
+[2]: ObjectId: 2.5.29.15 Criticality=true
+KeyUsage [
+  Key_CertSign
+  Crl_Sign
+]
+
+[3]: ObjectId: 2.5.29.14 Criticality=false
+SubjectKeyIdentifier [
+KeyIdentifier [
+0000: 56 99 07 1E D3 AC 0C 69   64 B4 0C 50 47 DE 43 2C  V......id..PG.C,
+0010: BE 20 C0 FB                                        . ..
+]
+]
+
+]
+  Algorithm: [SHA256withRSA]
+  Signature:
+0000: 9E 45 76 7B 17 48 32 F2   38 8B 29 BD EE 96 4A 4E  .Ev..H2.8.)...JN
+0010: 81 18 B1 51 47 20 CD D0   64 B1 0E C9 D9 01 D9 09  ...QG ..d.......
+0020: CE C8 99 DC 68 25 13 D4   5C F2 A3 E8 04 FE 72 09  ....h%..\.....r.
+0030: C7 0B AA 1D 25 55 7E 96   9A 57 B7 BA C5 11 7A 19  ....%U...W....z.
+0040: E6 A7 7E 3D 85 0E F5 F9   2E 29 2F E7 F9 6C 58 16  ...=.....)/..lX.
+0050: 57 50 25 F6 3E 2E 3E AA   ED 77 71 AA AA 99 96 46  WP%.>.>..wq....F
+0060: 0A AE 8E EC 2A 51 16 B0   5E CD EA 67 04 1C 58 30  ....*Q..^..g..X0
+0070: F5 60 8A BD A6 BD 4D E5   96 B4 FC 42 89 01 6B F6  .`....M....B..k.
+0080: 70 C8 50 39 0C 2D D5 66   D9 C8 D2 B3 32 B7 1B 19  p.P9.-.f....2...
+0090: 6D CB 33 F9 DF A5 E6 15   84 37 F0 C2 F2 65 96 92  m.3......7...e..
+00A0: 90 77 F0 AD F4 90 E9 11   78 D7 93 89 C0 3D 0B BA  .w......x....=..
+00B0: 29 F4 E8 99 9D 72 8E ED   9D 2F EE 92 7D A1 F1 FF  )....r.../......
+00C0: 5D BA 33 60 85 62 FE 07   02 A1 84 56 46 BE 96 0A  ].3`.b.....VF...
+00D0: 9A 13 D7 21 4C B7 7C 07   9F 4E 4E 3F 91 74 FB 27  ...!L....NN?.t.'
+00E0: 9D 11 CC DD E6 B1 CA 71   4D 13 17 39 26 C5 29 21  .......qM..9&.)!
+00F0: 2B 93 29 6A 96 FA AB 41   E1 4B B6 35 0B C0 9B 15  +.)j...A.K.5....
+
+]]]
+
+[2023-11-19T22:02:55.433+0000] [] [[1;93mWARNING[0m] [NCLS-SECURITY-05054] [[1;94mjavax.enterprise.system.security.ssl[0m] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1700431375433] [levelValue: 900] [[
+  The SSL certificate with alias secomscrootca1 has expired: [
+[
+  Version: V3
+  Subject: OU=Security Communication RootCA1, O=SECOM Trust.net, C=JP
+  Signature Algorithm: SHA1withRSA, OID = 1.2.840.113549.1.1.5
+
+  Key:  Sun RSA public key, 2048 bits
+  params: null
+  modulus: 22685415006428200592833491962883484487168551771659798294854733780211541293353195301021419673625490780393305764607061385802290524116309077213686923226627090091654547764901452725019201966157070186182415870146235639783132356542776042920414778026123817062775425095240940908518300952728974111583882104748722341382283733954749826083238772064772768624092462858138095338007700353180760999777929264504829418107242179729222967684228493046848655508111652325414550570526591838661684974140725089508500881931337603205967142263298060989123154924616448912936228832215306052782571395150897002425570063612042041994623587241136717310067
+  public exponent: 65537
+  Validity: [From: Tue Sep 30 04:20:49 GMT 2003,
+               To: Sat Sep 30 04:20:49 GMT 2023]
+  Issuer: OU=Security Communication RootCA1, O=SECOM Trust.net, C=JP
+  SerialNumber: [    00]
+
+Certificate Extensions: 3
+[1]: ObjectId: 2.5.29.19 Criticality=true
+BasicConstraints:[
+  CA:true
+  PathLen: no limit
+]
+
+[2]: ObjectId: 2.5.29.15 Criticality=false
+KeyUsage [
+  Key_CertSign
+  Crl_Sign
+]
+
+[3]: ObjectId: 2.5.29.14 Criticality=false
+SubjectKeyIdentifier [
+KeyIdentifier [
+0000: A0 73 49 99 68 DC 85 5B   65 E3 9B 28 2F 57 9F BD  .sI.h..[e..(/W..
+0010: 33 BC 07 48                                        3..H
+]
+]
+
+]
+  Algorithm: [SHA1withRSA]
+  Signature:
+0000: 68 40 A9 A8 BB E4 4F 5D   79 B3 05 B5 17 B3 60 13  h@....O]y.....`.
+0010: EB C6 92 5D E0 D1 D3 6A   FE FB BE 9B 6D BF C7 05  ...]...j....m...
+0020: 6D 59 20 C4 1C F0 B7 DA   84 58 02 63 FA 48 16 EF  mY ......X.c.H..
+0030: 4F A5 0B F7 4A 98 F2 3F   9E 1B AD 47 6B 63 CE 08  O...J..?...Gkc..
+0040: 47 EB 52 3F 78 9C AF 4D   AE F8 D5 4F CF 9A 98 2A  G.R?x..M...O...*
+0050: 10 41 39 52 C4 DD D9 9B   0E EF 93 01 AE B2 2E CA  .A9R............
+0060: 68 42 24 42 6C B0 B3 3A   3E CD E9 DA 48 C4 15 CB  hB$Bl..:>...H...
+0070: E9 F9 07 0F 92 50 49 8A   DD 31 97 5F C9 E9 37 AA  .....PI..1._..7.
+0080: 3B 59 65 97 94 32 C9 B3   9F 3E 3A 62 58 C5 49 AD  ;Ye..2...>:bX.I.
+0090: 62 0E 71 A5 32 AA 2F C6   89 76 43 40 13 13 67 3D  b.q.2./..vC@..g=
+00A0: A2 54 25 10 CB F1 3A F2   D9 FA DB 49 56 BB A6 FE  .T%...:....IV...
+00B0: A7 41 35 C3 E0 88 61 C9   88 C7 DF 36 10 22 98 59  .A5...a....6.".Y
+00C0: EA B0 4A FB 56 16 73 6E   AC 4D F7 22 A1 4F AD 1D  ..J.V.sn.M.".O..
+00D0: 7A 2D 45 27 E5 30 C1 5E   F2 DA 13 CB 25 42 51 95  z-E'.0.^....%BQ.
+00E0: 47 03 8C 6C 21 CC 74 42   ED 53 FF 33 8B 8F 0F 57  G..l!.tB.S.3...W
+00F0: 01 16 2F CF A6 EE C9 70   22 14 BD FD BE 6C 0B 03  ../....p"....l..
+
+]]]
+
+[2023-11-19T22:02:55.436+0000] [] [[1;93mWARNING[0m] [NCLS-SECURITY-05054] [[1;94mjavax.enterprise.system.security.ssl[0m] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1700431375436] [levelValue: 900] [[
+  The SSL certificate with alias cert_17_security_communication_root_ca17 has expired: [
+[
+  Version: V3
+  Subject: OU=Security Communication RootCA1, O=SECOM Trust.net, C=JP
+  Signature Algorithm: SHA1withRSA, OID = 1.2.840.113549.1.1.5
+
+  Key:  Sun RSA public key, 2048 bits
+  params: null
+  modulus: 22685415006428200592833491962883484487168551771659798294854733780211541293353195301021419673625490780393305764607061385802290524116309077213686923226627090091654547764901452725019201966157070186182415870146235639783132356542776042920414778026123817062775425095240940908518300952728974111583882104748722341382283733954749826083238772064772768624092462858138095338007700353180760999777929264504829418107242179729222967684228493046848655508111652325414550570526591838661684974140725089508500881931337603205967142263298060989123154924616448912936228832215306052782571395150897002425570063612042041994623587241136717310067
+  public exponent: 65537
+  Validity: [From: Tue Sep 30 04:20:49 GMT 2003,
+               To: Sat Sep 30 04:20:49 GMT 2023]
+  Issuer: OU=Security Communication RootCA1, O=SECOM Trust.net, C=JP
+  SerialNumber: [    00]
+
+Certificate Extensions: 3
+[1]: ObjectId: 2.5.29.19 Criticality=true
+BasicConstraints:[
+  CA:true
+  PathLen: no limit
+]
+
+[2]: ObjectId: 2.5.29.15 Criticality=false
+KeyUsage [
+  Key_CertSign
+  Crl_Sign
+]
+
+[3]: ObjectId: 2.5.29.14 Criticality=false
+SubjectKeyIdentifier [
+KeyIdentifier [
+0000: A0 73 49 99 68 DC 85 5B   65 E3 9B 28 2F 57 9F BD  .sI.h..[e..(/W..
+0010: 33 BC 07 48                                        3..H
+]
+]
+
+]
+  Algorithm: [SHA1withRSA]
+  Signature:
+0000: 68 40 A9 A8 BB E4 4F 5D   79 B3 05 B5 17 B3 60 13  h@....O]y.....`.
+0010: EB C6 92 5D E0 D1 D3 6A   FE FB BE 9B 6D BF C7 05  ...]...j....m...
+0020: 6D 59 20 C4 1C F0 B7 DA   84 58 02 63 FA 48 16 EF  mY ......X.c.H..
+0030: 4F A5 0B F7 4A 98 F2 3F   9E 1B AD 47 6B 63 CE 08  O...J..?...Gkc..
+0040: 47 EB 52 3F 78 9C AF 4D   AE F8 D5 4F CF 9A 98 2A  G.R?x..M...O...*
+0050: 10 41 39 52 C4 DD D9 9B   0E EF 93 01 AE B2 2E CA  .A9R............
+0060: 68 42 24 42 6C B0 B3 3A   3E CD E9 DA 48 C4 15 CB  hB$Bl..:>...H...
+0070: E9 F9 07 0F 92 50 49 8A   DD 31 97 5F C9 E9 37 AA  .....PI..1._..7.
+0080: 3B 59 65 97 94 32 C9 B3   9F 3E 3A 62 58 C5 49 AD  ;Ye..2...>:bX.I.
+0090: 62 0E 71 A5 32 AA 2F C6   89 76 43 40 13 13 67 3D  b.q.2./..vC@..g=
+00A0: A2 54 25 10 CB F1 3A F2   D9 FA DB 49 56 BB A6 FE  .T%...:....IV...
+00B0: A7 41 35 C3 E0 88 61 C9   88 C7 DF 36 10 22 98 59  .A5...a....6.".Y
+00C0: EA B0 4A FB 56 16 73 6E   AC 4D F7 22 A1 4F AD 1D  ..J.V.sn.M.".O..
+00D0: 7A 2D 45 27 E5 30 C1 5E   F2 DA 13 CB 25 42 51 95  z-E'.0.^....%BQ.
+00E0: 47 03 8C 6C 21 CC 74 42   ED 53 FF 33 8B 8F 0F 57  G..l!.tB.S.3...W
+00F0: 01 16 2F CF A6 EE C9 70   22 14 BD FD BE 6C 0B 03  ../....p"....l..
+
+]]]
+
+[2023-11-19T22:02:55.439+0000] [] [[1;93mWARNING[0m] [NCLS-SECURITY-05054] [[1;94mjavax.enterprise.system.security.ssl[0m] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1700431375439] [levelValue: 900] [[
+  The SSL certificate with alias cert_58_hongkong_post_root_ca_158 has expired: [
+[
+  Version: V3
+  Subject: CN=Hongkong Post Root CA 1, O=Hongkong Post, C=HK
+  Signature Algorithm: SHA1withRSA, OID = 1.2.840.113549.1.1.5
+
+  Key:  Sun RSA public key, 2048 bits
+  params: null
+  modulus: 21838842886693663724158784403585651086528104296164385860161022739921373369707218030440506162102136558173436946849391294793307782954841942242024273695880348195893353627449588124799424784895102163646643691443106811950234631518233611566768492779470498453433790097889234697472188330775500811277774315685791867415626540129742998447505936911063048831531565774606692545305742615948612457260210732651168707753992847234653569046467370474286879899035889542471401156823937233107153209946260999805445553824772354779142234853024395292937233533541458297850158745682023984935736594691428586456965578890433083770465299339539844369287
+  public exponent: 65537
+  Validity: [From: Thu May 15 05:13:14 GMT 2003,
+               To: Mon May 15 04:52:29 GMT 2023]
+  Issuer: CN=Hongkong Post Root CA 1, O=Hongkong Post, C=HK
+  SerialNumber: [    03e8]
+
+Certificate Extensions: 2
+[1]: ObjectId: 2.5.29.19 Criticality=true
+BasicConstraints:[
+  CA:true
+  PathLen:3
+]
+
+[2]: ObjectId: 2.5.29.15 Criticality=true
+KeyUsage [
+  DigitalSignature
+  Non_repudiation
+  Key_CertSign
+  Crl_Sign
+]
+
+]
+  Algorithm: [SHA1withRSA]
+  Signature:
+0000: 0E 46 D5 3C AE E2 87 D9   5E 81 8B 02 98 41 08 8C  .F.<....^....A..
+0010: 4C BC DA DB EE 27 1B 82   E7 6A 45 EC 16 8B 4F 85  L....'...jE...O.
+0020: A0 F3 B2 70 BD 5A 96 BA   CA 6E 6D EE 46 8B 6E E7  ...p.Z...nm.F.n.
+0030: 2A 2E 96 B3 19 33 EB B4   9F A8 B2 37 EE 98 A8 97  *....3.....7....
+0040: B6 2E B6 67 27 D4 A6 49   FD 1C 93 65 76 9E 42 2F  ...g'..I...ev.B/
+0050: DC 22 6C 9A 4F F2 5A 15   39 B1 71 D7 2B 51 E8 6D  ."l.O.Z.9.q.+Q.m
+0060: 1C 98 C0 D9 2A F4 A1 82   7B D5 C9 41 A2 23 01 74  ....*......A.#.t
+0070: 38 55 8B 0F B9 2E 67 A2   20 04 37 DA 9C 0B D3 17  8U....g. .7.....
+0080: 21 E0 8F 97 79 34 6F 84   48 02 20 33 1B E6 34 44  !...y4o.H. 3..4D
+0090: 9F 91 70 F4 80 5E 84 43   C2 29 D2 6C 12 14 E4 61  ..p..^.C.).l...a
+00A0: 8D AC 10 90 9E 84 50 BB   F0 96 6F 45 9F 8A F3 CA  ......P...oE....
+00B0: 6C 4F FA 11 3A 15 15 46   C3 CD 1F 83 5B 2D 41 12  lO..:..F....[-A.
+00C0: ED 50 67 41 13 3D 21 AB   94 8A AA 4E 7C C1 B1 FB  .PgA.=!....N....
+00D0: A7 D6 B5 27 2F 97 AB 6E   E0 1D E2 D1 1C 2C 1F 44  ...'/..n.....,.D
+00E0: E2 FC BE 91 A1 9C FB D6   29 53 73 86 9F 53 D8 43  ........)Ss..S.C
+00F0: 0E 5D D6 63 82 71 1D 80   74 CA F6 E2 02 6B D9 5A  .].c.q..t....k.Z
+
+]]]
+
+[2023-11-19T22:02:55.461+0000] [] [[1;92mINFO[0m] [NCLS-SECURITY-01002] [[1;94mjavax.enterprise.system.core.security[0m] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1700431375461] [levelValue: 800] Java security manager is disabled.
+
+[2023-11-19T22:02:55.461+0000] [] [[1;92mINFO[0m] [NCLS-SECURITY-01010] [[1;94mjavax.enterprise.system.core.security[0m] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1700431375461] [levelValue: 800] Entering Security Startup Service.
+
+[2023-11-19T22:02:55.464+0000] [] [[1;92mINFO[0m] [NCLS-SECURITY-01143] [[1;94mjavax.enterprise.system.core.security[0m] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1700431375464] [levelValue: 800] Loading policy provider fish.payara.security.jacc.provider.PolicyProviderImpl.
+
+[2023-11-19T22:02:55.508+0000] [] [[1;92mINFO[0m] [NCLS-SECURITY-01011] [[1;94mjavax.enterprise.system.core.security[0m] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1700431375508] [levelValue: 800] Security Service(s) started successfully.
+
+[2023-11-19T22:02:55.919+0000] [] [[1;92mINFO[0m] [AS-WEB-GLUE-00198] [[1;94mjakarta.enterprise.web[0m] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1700431375919] [levelValue: 800] Created HTTP listener http-listener on host/port 0.0.0.0:8080
+
+[2023-11-19T22:02:55.953+0000] [] [[1;92mINFO[0m] [AS-WEB-GLUE-00200] [[1;94mjakarta.enterprise.web[0m] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1700431375953] [levelValue: 800] Created virtual server server
+
+[2023-11-19T22:02:56.410+0000] [] [[1;92mINFO[0m] [AS-WEB-GLUE-00201] [[1;94mjakarta.enterprise.web[0m] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1700431376410] [levelValue: 800] Virtual server server loaded default web module 
+
+[2023-11-19T22:02:57.746+0000] [] [[1;93mWARNING[0m] [] [[1;94mjakarta.enterprise.web.util[0m] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1700431377746] [levelValue: 900] The web application [unknown] registered the JDBC driver [org.postgresql.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+
+[2023-11-19T22:02:57.789+0000] [] [[1;92mINFO[0m] [] [[1;94morg.jboss.weld.Version[0m] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1700431377789] [levelValue: 800] WELD-000900: 5.0.1 (Final)
+
+[2023-11-19T22:03:00.008+0000] [] [[1;92mINFO[0m] [] [[1;94mfish.payara.micro.cdi.extension.ClusteredCDIEventBusImpl[0m] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1700431380008] [levelValue: 800] Clustered CDI Event bus initialized
+
+[2023-11-19T22:03:00.106+0000] [] [[1;92mINFO[0m] [] [[1;94mjavax.enterprise.system.core[0m] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1700431380106] [levelValue: 800] clinic-rest was successfully deployed in 5,885 milliseconds.
+
+[2023-11-19T22:03:00.110+0000] [] [[1;92mINFO[0m] [] [[1;94mPayaraMicro[0m] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1700431380110] [levelValue: 800] Deployed 1 archive(s)
+
+[2023-11-19T22:03:00.173+0000] [] [[1;92mINFO[0m] [AS-WEB-GLUE-00130] [[1;94mjakarta.enterprise.web[0m] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1700431380173] [levelValue: 800] Invalid Session Management Configuration for non-distributable app [clinic-rest] - defaulting to memory: persistence-type = [hazelcast] / persistenceFrequency = [web-method] / persistenceScope = [modified-session]
+
+[2023-11-19T22:03:00.228+0000] [] [[1;92mINFO[0m] [] [[1;94morg.glassfish.soteria.servlet.SamRegistrationInstaller[0m] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1700431380228] [levelValue: 800] Initializing Soteria 3.0.1.payara-p1 for context '/api'
+
+[2023-11-19T22:03:00.445+0000] [] [[1;92mINFO[0m] [AS-WEB-GLUE-00172] [[1;94mjakarta.enterprise.web[0m] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1700431380445] [levelValue: 800] Loading application [clinic-rest] at [/api]
+
+[2023-11-19T22:03:00.463+0000] [] [[1;92mINFO[0m] [] [[1;94mPayaraMicro[0m] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1700431380463] [levelValue: 800] [[
+  {
+    "Instance Configuration": {
+        "Host": "clinic-rest-7bc9b4756c-xr4n6",
+        "Http Port(s)": "8080",
+        "Https Port(s)": "",
+        "Instance Name": "Sparkling-Dab",
+        "Instance Group": "MicroShoal",
+        "Hazelcast Member UUID": "a3e6ea9d-2b35-46ca-abed-fc6646ec65cd",
+        "Deployed": [
+            {
+                "Name": "clinic-rest",
+                "Type": "war",
+                "Context Root": "/api"
+            }
+        ]
+    }
+}]]
+
+[2023-11-19T22:03:00.469+0000] [] [[1;92mINFO[0m] [] [[1;94mPayaraMicro[0m] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1700431380469] [levelValue: 800] [[
+  
+Payara Micro URLs:
+http://clinic-rest-7bc9b4756c-xr4n6:8080/api
+
+'clinic-rest' REST Endpoints:
+GET	/api/application.wadl
+POST	/api/patient
+GET	/api/patient/{id}
+POST	/api/provider
+GET	/api/provider/{id}
+POST	/api/provider/{id}/treatment
+GET	/api/provider/{id}/treatment/{tid}
+
+]]
+
+[2023-11-19T22:03:00.470+0000] [] [[1;92mINFO[0m] [] [[1;94mPayaraMicro[0m] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1700431380470] [levelValue: 800] Payara Micro 6.2023.2 #badassmicrofish (build 903) ready in 14,189 (ms)
+
+[2023-11-19T22:10:33.772+0000] [] [[1;92mINFO[0m] [] [[1;94medu.stevens.cs548.clinic.micro.domain.stub.PatientService[0m] [tid: _ThreadID=67 _ThreadName=http-thread-pool::http-listener(2)] [timeMillis: 1700431833772] [levelValue: 800] addPatient: Adding patient Mike in microservice client!
+
+[2023-11-19T22:10:42.578+0000] [] [[1;92mINFO[0m] [] [[1;94medu.stevens.cs548.clinic.micro.domain.stub.PatientService[0m] [tid: _ThreadID=66 _ThreadName=http-thread-pool::http-listener(1)] [timeMillis: 1700431842578] [levelValue: 800] getPatient: Getting patient a5152cee-f771-4fa7-aab4-b617ba7d2a4e in microservice client!
+
+[2023-11-19T22:10:42.654+0000] [] [[1;92mINFO[0m] [] [[1;94medu.stevens.cs548.clinic.micro.domain.GsonProvider[0m] [tid: _ThreadID=66 _ThreadName=http-thread-pool::http-listener(1)] [timeMillis: 1700431842654] [levelValue: 800] Reading object of type edu.stevens.cs548.clinic.service.dto.PatientDto (generic type edu.stevens.cs548.clinic.service.dto.PatientDto
+
+[2023-11-19T22:11:14.490+0000] [] [[1;92mINFO[0m] [] [[1;94medu.stevens.cs548.clinic.micro.domain.stub.ProviderService[0m] [tid: _ThreadID=67 _ThreadName=http-thread-pool::http-listener(2)] [timeMillis: 1700431874490] [levelValue: 800] addProvider: Adding provider Leo in microservice client!
+
+[2023-11-19T22:12:34.677+0000] [] [[1;92mINFO[0m] [] [[1;94medu.stevens.cs548.clinic.micro.domain.stub.ProviderService[0m] [tid: _ThreadID=66 _ThreadName=http-thread-pool::http-listener(1)] [timeMillis: 1700431954677] [levelValue: 800] addTreatment: Adding treatment for Mike in microservice client!
+
+[2023-11-19T22:13:29.511+0000] [] [[1;92mINFO[0m] [] [[1;94medu.stevens.cs548.clinic.micro.domain.stub.ProviderService[0m] [tid: _ThreadID=66 _ThreadName=http-thread-pool::http-listener(1)] [timeMillis: 1700432009511] [levelValue: 800] addTreatment: Adding treatment for Mike in microservice client!
+
+[2023-11-19T22:13:58.677+0000] [] [[1;92mINFO[0m] [] [[1;94medu.stevens.cs548.clinic.micro.domain.stub.ProviderService[0m] [tid: _ThreadID=67 _ThreadName=http-thread-pool::http-listener(2)] [timeMillis: 1700432038677] [levelValue: 800] addTreatment: Adding treatment for Mike in microservice client!
+
+[2023-11-19T22:14:22.307+0000] [] [[1;92mINFO[0m] [] [[1;94medu.stevens.cs548.clinic.micro.domain.stub.ProviderService[0m] [tid: _ThreadID=67 _ThreadName=http-thread-pool::http-listener(2)] [timeMillis: 1700432062307] [levelValue: 800] addTreatment: Adding treatment for Mike in microservice client!
+

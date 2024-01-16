@@ -1,0 +1,24 @@
+{
+	"$id": "https://cs548.stevens.edu/clinic/provider",
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"description": "JSON Schema for providers",
+	"type" : "object",
+	"properties" : {
+		"id": {
+			"type": "string",
+			"format": "uuid"
+		},
+		"npi": {
+			"type": "string"
+		},
+		"name": {
+			"type": "string"
+		},
+		"treatments": {
+			"type": "array",
+			"items": { "$ref" :  "https://cs548.stevens.edu/clinic/treatment" }
+		}
+	},
+	"required": ["id", "npi", "name", "treatments"],
+	"additionalProperties": false
+}

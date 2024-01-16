@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="589e2d03-0d42-4631-a784-95e152d790d4" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="jdkForImporter" value="17 (2)" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2Mk5YbRMzcIMM3h6AnIXx1n0BlM" />
+  <component name="ProjectViewState">
+    <option name="flattenPackages" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "/Users/dduggan/Documents/Teach/CS548/Classes/2023-Fall/Assignments/Assignment8-Microservices/Assignment-Code/clinic-root/pom.xml",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "SDKs",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="edu.stevens.cs548.clinic.micro.domain" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="589e2d03-0d42-4631-a784-95e152d790d4" name="Changes" comment="" />
+      <created>1678298787788</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1678298787788</updated>
+      <workItem from="1678298789230" duration="442000" />
+      <workItem from="1678446387638" duration="187000" />
+      <workItem from="1678803414893" duration="15000" />
+      <workItem from="1678803563026" duration="408000" />
+      <workItem from="1678804006695" duration="3344000" />
+      <workItem from="1678809672366" duration="6008000" />
+      <workItem from="1678817729290" duration="1671000" />
+      <workItem from="1678831816732" duration="396000" />
+      <workItem from="1679171963493" duration="4112000" />
+      <workItem from="1679181299981" duration="191000" />
+      <workItem from="1679315807874" duration="29000" />
+      <workItem from="1679440455044" duration="447000" />
+      <workItem from="1679837811384" duration="310000" />
+      <workItem from="1680272575903" duration="1173000" />
+      <workItem from="1680391285797" duration="336000" />
+      <workItem from="1680453746734" duration="953000" />
+      <workItem from="1680456613337" duration="85000" />
+      <workItem from="1698534043573" duration="3292000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

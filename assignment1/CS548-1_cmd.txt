@@ -1,0 +1,840 @@
+Microsoft Windows [Version 10.0.19045.3324]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\user>cd Downloads
+
+C:\Users\user\Downloads>ssh -i CS548_keypair.pem ec2-user@13.58.87.68
+The authenticity of host '13.58.87.68 (13.58.87.68)' can't be established.
+ECDSA key fingerprint is SHA256:V6muAT4q1+HZZNkZp1fZ8F2NcKf4cyPSAqR5QG3nX8M.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added '13.58.87.68' (ECDSA) to the list of known hosts.
+
+       __|  __|_  )
+       _|  (     /   Amazon Linux 2 AMI
+      ___|\___|___|
+
+https://aws.amazon.com/amazon-linux-2/
+5 package(s) needed for security, out of 36 available
+Run "sudo yum update" to apply all updates.
+[ec2-user@ip-172-31-31-147 ~]$ sudo yum update
+Loaded plugins: extras_suggestions, langpacks, priorities, update-motd
+Resolving Dependencies
+--> Running transaction check
+---> Package bind-export-libs.x86_64 32:9.11.4-26.P2.amzn2.13.3 will be updated
+---> Package bind-export-libs.x86_64 32:9.11.4-26.P2.amzn2.13.4 will be an update
+---> Package bind-libs.x86_64 32:9.11.4-26.P2.amzn2.13.3 will be updated
+---> Package bind-libs.x86_64 32:9.11.4-26.P2.amzn2.13.4 will be an update
+---> Package bind-libs-lite.x86_64 32:9.11.4-26.P2.amzn2.13.3 will be updated
+---> Package bind-libs-lite.x86_64 32:9.11.4-26.P2.amzn2.13.4 will be an update
+---> Package bind-license.noarch 32:9.11.4-26.P2.amzn2.13.3 will be updated
+---> Package bind-license.noarch 32:9.11.4-26.P2.amzn2.13.4 will be an update
+---> Package bind-utils.x86_64 32:9.11.4-26.P2.amzn2.13.3 will be updated
+---> Package bind-utils.x86_64 32:9.11.4-26.P2.amzn2.13.4 will be an update
+---> Package curl.x86_64 0:8.2.1-1.amzn2.0.2 will be updated
+---> Package curl.x86_64 0:8.2.1-1.amzn2.0.3 will be an update
+---> Package dhclient.x86_64 12:4.2.5-79.amzn2.1.4 will be updated
+---> Package dhclient.x86_64 12:4.2.5-79.amzn2.1.5 will be an update
+---> Package dhcp-common.x86_64 12:4.2.5-79.amzn2.1.4 will be updated
+---> Package dhcp-common.x86_64 12:4.2.5-79.amzn2.1.5 will be an update
+---> Package dhcp-libs.x86_64 12:4.2.5-79.amzn2.1.4 will be updated
+---> Package dhcp-libs.x86_64 12:4.2.5-79.amzn2.1.5 will be an update
+---> Package glibc.x86_64 0:2.26-63.amzn2 will be updated
+---> Package glibc.x86_64 0:2.26-63.amzn2.0.1 will be an update
+---> Package glibc-all-langpacks.x86_64 0:2.26-63.amzn2 will be updated
+---> Package glibc-all-langpacks.x86_64 0:2.26-63.amzn2.0.1 will be an update
+---> Package glibc-common.x86_64 0:2.26-63.amzn2 will be updated
+---> Package glibc-common.x86_64 0:2.26-63.amzn2.0.1 will be an update
+---> Package glibc-locale-source.x86_64 0:2.26-63.amzn2 will be updated
+---> Package glibc-locale-source.x86_64 0:2.26-63.amzn2.0.1 will be an update
+---> Package glibc-minimal-langpack.x86_64 0:2.26-63.amzn2 will be updated
+---> Package glibc-minimal-langpack.x86_64 0:2.26-63.amzn2.0.1 will be an update
+---> Package kernel.x86_64 0:5.10.192-183.736.amzn2 will be installed
+---> Package kernel-tools.x86_64 0:5.10.192-182.736.amzn2 will be updated
+---> Package kernel-tools.x86_64 0:5.10.192-183.736.amzn2 will be an update
+---> Package libcrypt.x86_64 0:2.26-63.amzn2 will be updated
+---> Package libcrypt.x86_64 0:2.26-63.amzn2.0.1 will be an update
+---> Package libcurl.x86_64 0:8.2.1-1.amzn2.0.2 will be updated
+---> Package libcurl.x86_64 0:8.2.1-1.amzn2.0.3 will be an update
+---> Package libgcc.x86_64 0:7.3.1-15.amzn2 will be updated
+---> Package libgcc.x86_64 0:7.3.1-17.amzn2 will be an update
+---> Package libgomp.x86_64 0:7.3.1-15.amzn2 will be updated
+---> Package libgomp.x86_64 0:7.3.1-17.amzn2 will be an update
+---> Package libidn.x86_64 0:1.28-4.amzn2.0.4 will be updated
+---> Package libidn.x86_64 0:1.28-4.amzn2.0.5 will be an update
+---> Package libidn2.x86_64 0:2.3.0-1.amzn2.0.2 will be updated
+---> Package libidn2.x86_64 0:2.3.0-1.amzn2.0.3 will be an update
+---> Package libjpeg-turbo.x86_64 0:2.0.90-2.amzn2.0.4 will be updated
+---> Package libjpeg-turbo.x86_64 0:2.0.90-2.amzn2.0.5 will be an update
+---> Package libnghttp2.x86_64 0:1.41.0-1.amzn2.0.1 will be updated
+---> Package libnghttp2.x86_64 0:1.41.0-1.amzn2.0.3 will be an update
+---> Package libpng.x86_64 2:1.5.13-8.amzn2.0.3 will be updated
+---> Package libpng.x86_64 2:1.5.13-8.amzn2.0.5 will be an update
+---> Package libssh2.x86_64 0:1.4.3-12.amzn2.2.4 will be updated
+---> Package libssh2.x86_64 0:1.4.3-12.amzn2.2.5 will be an update
+---> Package libstdc++.x86_64 0:7.3.1-15.amzn2 will be updated
+---> Package libstdc++.x86_64 0:7.3.1-17.amzn2 will be an update
+---> Package libtasn1.x86_64 0:4.10-1.amzn2.0.5 will be updated
+---> Package libtasn1.x86_64 0:4.10-1.amzn2.0.6 will be an update
+---> Package libxml2.x86_64 0:2.9.1-6.amzn2.5.10 will be updated
+---> Package libxml2.x86_64 0:2.9.1-6.amzn2.5.12 will be an update
+---> Package libxml2-python.x86_64 0:2.9.1-6.amzn2.5.10 will be updated
+---> Package libxml2-python.x86_64 0:2.9.1-6.amzn2.5.12 will be an update
+---> Package openssh.x86_64 0:7.4p1-22.amzn2.0.3 will be updated
+---> Package openssh.x86_64 0:7.4p1-22.amzn2.0.5 will be an update
+---> Package openssh-clients.x86_64 0:7.4p1-22.amzn2.0.3 will be updated
+---> Package openssh-clients.x86_64 0:7.4p1-22.amzn2.0.5 will be an update
+---> Package openssh-server.x86_64 0:7.4p1-22.amzn2.0.3 will be updated
+---> Package openssh-server.x86_64 0:7.4p1-22.amzn2.0.5 will be an update
+---> Package openssl.x86_64 1:1.0.2k-24.amzn2.0.7 will be updated
+---> Package openssl.x86_64 1:1.0.2k-24.amzn2.0.9 will be an update
+---> Package openssl-libs.x86_64 1:1.0.2k-24.amzn2.0.7 will be updated
+---> Package openssl-libs.x86_64 1:1.0.2k-24.amzn2.0.9 will be an update
+---> Package sudo.x86_64 0:1.8.23-10.amzn2.3.3 will be updated
+---> Package sudo.x86_64 0:1.8.23-10.amzn2.3.4 will be an update
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+========================================================================================================================
+ Package                        Arch           Version                             Repository                      Size
+========================================================================================================================
+Installing:
+ kernel                         x86_64         5.10.192-183.736.amzn2              amzn2extra-kernel-5.10          33 M
+Updating:
+ bind-export-libs               x86_64         32:9.11.4-26.P2.amzn2.13.4          amzn2-core                     1.1 M
+ bind-libs                      x86_64         32:9.11.4-26.P2.amzn2.13.4          amzn2-core                     159 k
+ bind-libs-lite                 x86_64         32:9.11.4-26.P2.amzn2.13.4          amzn2-core                     1.1 M
+ bind-license                   noarch         32:9.11.4-26.P2.amzn2.13.4          amzn2-core                      92 k
+ bind-utils                     x86_64         32:9.11.4-26.P2.amzn2.13.4          amzn2-core                     261 k
+ curl                           x86_64         8.2.1-1.amzn2.0.3                   amzn2-core                     369 k
+ dhclient                       x86_64         12:4.2.5-79.amzn2.1.5               amzn2-core                     287 k
+ dhcp-common                    x86_64         12:4.2.5-79.amzn2.1.5               amzn2-core                     177 k
+ dhcp-libs                      x86_64         12:4.2.5-79.amzn2.1.5               amzn2-core                     132 k
+ glibc                          x86_64         2.26-63.amzn2.0.1                   amzn2-core                     3.3 M
+ glibc-all-langpacks            x86_64         2.26-63.amzn2.0.1                   amzn2-core                     7.0 M
+ glibc-common                   x86_64         2.26-63.amzn2.0.1                   amzn2-core                     774 k
+ glibc-locale-source            x86_64         2.26-63.amzn2.0.1                   amzn2-core                     3.2 M
+ glibc-minimal-langpack         x86_64         2.26-63.amzn2.0.1                   amzn2-core                      33 k
+ kernel-tools                   x86_64         5.10.192-183.736.amzn2              amzn2extra-kernel-5.10         202 k
+ libcrypt                       x86_64         2.26-63.amzn2.0.1                   amzn2-core                      53 k
+ libcurl                        x86_64         8.2.1-1.amzn2.0.3                   amzn2-core                     333 k
+ libgcc                         x86_64         7.3.1-17.amzn2                      amzn2-core                      99 k
+ libgomp                        x86_64         7.3.1-17.amzn2                      amzn2-core                     205 k
+ libidn                         x86_64         1.28-4.amzn2.0.5                    amzn2-core                     209 k
+ libidn2                        x86_64         2.3.0-1.amzn2.0.3                   amzn2-core                     140 k
+ libjpeg-turbo                  x86_64         2.0.90-2.amzn2.0.5                  amzn2-core                     171 k
+ libnghttp2                     x86_64         1.41.0-1.amzn2.0.3                  amzn2-core                      72 k
+ libpng                         x86_64         2:1.5.13-8.amzn2.0.5                amzn2-core                     212 k
+ libssh2                        x86_64         1.4.3-12.amzn2.2.5                  amzn2-core                     136 k
+ libstdc++                      x86_64         7.3.1-17.amzn2                      amzn2-core                     446 k
+ libtasn1                       x86_64         4.10-1.amzn2.0.6                    amzn2-core                     320 k
+ libxml2                        x86_64         2.9.1-6.amzn2.5.12                  amzn2-core                     661 k
+ libxml2-python                 x86_64         2.9.1-6.amzn2.5.12                  amzn2-core                     247 k
+ openssh                        x86_64         7.4p1-22.amzn2.0.5                  amzn2-core                     508 k
+ openssh-clients                x86_64         7.4p1-22.amzn2.0.5                  amzn2-core                     652 k
+ openssh-server                 x86_64         7.4p1-22.amzn2.0.5                  amzn2-core                     458 k
+ openssl                        x86_64         1:1.0.2k-24.amzn2.0.9               amzn2-core                     497 k
+ openssl-libs                   x86_64         1:1.0.2k-24.amzn2.0.9               amzn2-core                     1.2 M
+ sudo                           x86_64         1.8.23-10.amzn2.3.4                 amzn2-core                     847 k
+
+Transaction Summary
+========================================================================================================================
+Install   1 Package
+Upgrade  35 Packages
+
+Total download size: 58 M
+Is this ok [y/d/N]: y
+Downloading packages:
+Delta RPMs disabled because /usr/bin/applydeltarpm not installed.
+(1/36): bind-export-libs-9.11.4-26.P2.amzn2.13.4.x86_64.rpm                                      | 1.1 MB  00:00:00
+(2/36): bind-libs-9.11.4-26.P2.amzn2.13.4.x86_64.rpm                                             | 159 kB  00:00:00
+(3/36): bind-libs-lite-9.11.4-26.P2.amzn2.13.4.x86_64.rpm                                        | 1.1 MB  00:00:00
+(4/36): bind-license-9.11.4-26.P2.amzn2.13.4.noarch.rpm                                          |  92 kB  00:00:00
+(5/36): bind-utils-9.11.4-26.P2.amzn2.13.4.x86_64.rpm                                            | 261 kB  00:00:00
+(6/36): curl-8.2.1-1.amzn2.0.3.x86_64.rpm                                                        | 369 kB  00:00:00
+(7/36): dhclient-4.2.5-79.amzn2.1.5.x86_64.rpm                                                   | 287 kB  00:00:00
+(8/36): dhcp-common-4.2.5-79.amzn2.1.5.x86_64.rpm                                                | 177 kB  00:00:00
+(9/36): dhcp-libs-4.2.5-79.amzn2.1.5.x86_64.rpm                                                  | 132 kB  00:00:00
+(10/36): glibc-2.26-63.amzn2.0.1.x86_64.rpm                                                      | 3.3 MB  00:00:00
+(11/36): glibc-common-2.26-63.amzn2.0.1.x86_64.rpm                                               | 774 kB  00:00:00
+(12/36): glibc-locale-source-2.26-63.amzn2.0.1.x86_64.rpm                                        | 3.2 MB  00:00:00
+(13/36): glibc-minimal-langpack-2.26-63.amzn2.0.1.x86_64.rpm                                     |  33 kB  00:00:00
+(14/36): libcrypt-2.26-63.amzn2.0.1.x86_64.rpm                                                   |  53 kB  00:00:00
+(15/36): libcurl-8.2.1-1.amzn2.0.3.x86_64.rpm                                                    | 333 kB  00:00:00
+(16/36): glibc-all-langpacks-2.26-63.amzn2.0.1.x86_64.rpm                                        | 7.0 MB  00:00:00
+(17/36): libgcc-7.3.1-17.amzn2.x86_64.rpm                                                        |  99 kB  00:00:00
+(18/36): libgomp-7.3.1-17.amzn2.x86_64.rpm                                                       | 205 kB  00:00:00
+(19/36): libidn-1.28-4.amzn2.0.5.x86_64.rpm                                                      | 209 kB  00:00:00
+(20/36): libidn2-2.3.0-1.amzn2.0.3.x86_64.rpm                                                    | 140 kB  00:00:00
+(21/36): libnghttp2-1.41.0-1.amzn2.0.3.x86_64.rpm                                                |  72 kB  00:00:00
+(22/36): kernel-tools-5.10.192-183.736.amzn2.x86_64.rpm                                          | 202 kB  00:00:00
+(23/36): libpng-1.5.13-8.amzn2.0.5.x86_64.rpm                                                    | 212 kB  00:00:00
+(24/36): libssh2-1.4.3-12.amzn2.2.5.x86_64.rpm                                                   | 136 kB  00:00:00
+(25/36): libstdc++-7.3.1-17.amzn2.x86_64.rpm                                                     | 446 kB  00:00:00
+(26/36): libtasn1-4.10-1.amzn2.0.6.x86_64.rpm                                                    | 320 kB  00:00:00
+(27/36): libxml2-2.9.1-6.amzn2.5.12.x86_64.rpm                                                   | 661 kB  00:00:00
+(28/36): libxml2-python-2.9.1-6.amzn2.5.12.x86_64.rpm                                            | 247 kB  00:00:00
+(29/36): libjpeg-turbo-2.0.90-2.amzn2.0.5.x86_64.rpm                                             | 171 kB  00:00:00
+(30/36): openssh-7.4p1-22.amzn2.0.5.x86_64.rpm                                                   | 508 kB  00:00:00
+(31/36): openssh-clients-7.4p1-22.amzn2.0.5.x86_64.rpm                                           | 652 kB  00:00:00
+(32/36): openssh-server-7.4p1-22.amzn2.0.5.x86_64.rpm                                            | 458 kB  00:00:00
+(33/36): openssl-1.0.2k-24.amzn2.0.9.x86_64.rpm                                                  | 497 kB  00:00:00
+(34/36): openssl-libs-1.0.2k-24.amzn2.0.9.x86_64.rpm                                             | 1.2 MB  00:00:00
+(35/36): sudo-1.8.23-10.amzn2.3.4.x86_64.rpm                                                     | 847 kB  00:00:00
+(36/36): kernel-5.10.192-183.736.amzn2.x86_64.rpm                                                |  33 MB  00:00:00
+------------------------------------------------------------------------------------------------------------------------
+Total                                                                                    59 MB/s |  58 MB  00:00:00
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  Updating   : glibc-2.26-63.amzn2.0.1.x86_64                                                                      1/71
+  Updating   : glibc-common-2.26-63.amzn2.0.1.x86_64                                                               2/71
+  Updating   : glibc-minimal-langpack-2.26-63.amzn2.0.1.x86_64                                                     3/71
+  Updating   : 1:openssl-libs-1.0.2k-24.amzn2.0.9.x86_64                                                           4/71
+  Updating   : libxml2-2.9.1-6.amzn2.5.12.x86_64                                                                   5/71
+  Updating   : libcrypt-2.26-63.amzn2.0.1.x86_64                                                                   6/71
+  Updating   : openssh-7.4p1-22.amzn2.0.5.x86_64                                                                   7/71
+  Updating   : libssh2-1.4.3-12.amzn2.2.5.x86_64                                                                   8/71
+  Updating   : 12:dhcp-libs-4.2.5-79.amzn2.1.5.x86_64                                                              9/71
+  Updating   : libnghttp2-1.41.0-1.amzn2.0.3.x86_64                                                               10/71
+  Updating   : libidn2-2.3.0-1.amzn2.0.3.x86_64                                                                   11/71
+  Updating   : 32:bind-license-9.11.4-26.P2.amzn2.13.4.noarch                                                     12/71
+  Updating   : 32:bind-libs-lite-9.11.4-26.P2.amzn2.13.4.x86_64                                                   13/71
+  Updating   : 32:bind-libs-9.11.4-26.P2.amzn2.13.4.x86_64                                                        14/71
+  Updating   : libcurl-8.2.1-1.amzn2.0.3.x86_64                                                                   15/71
+  Updating   : 12:dhcp-common-4.2.5-79.amzn2.1.5.x86_64                                                           16/71
+  Updating   : 32:bind-export-libs-9.11.4-26.P2.amzn2.13.4.x86_64                                                 17/71
+  Updating   : libidn-1.28-4.amzn2.0.5.x86_64                                                                     18/71
+  Updating   : libgcc-7.3.1-17.amzn2.x86_64                                                                       19/71
+  Updating   : libstdc++-7.3.1-17.amzn2.x86_64                                                                    20/71
+  Updating   : 32:bind-utils-9.11.4-26.P2.amzn2.13.4.x86_64                                                       21/71
+  Updating   : 12:dhclient-4.2.5-79.amzn2.1.5.x86_64                                                              22/71
+  Updating   : curl-8.2.1-1.amzn2.0.3.x86_64                                                                      23/71
+  Updating   : openssh-server-7.4p1-22.amzn2.0.5.x86_64                                                           24/71
+  Updating   : openssh-clients-7.4p1-22.amzn2.0.5.x86_64                                                          25/71
+  Updating   : libxml2-python-2.9.1-6.amzn2.5.12.x86_64                                                           26/71
+  Updating   : 1:openssl-1.0.2k-24.amzn2.0.9.x86_64                                                               27/71
+  Updating   : glibc-all-langpacks-2.26-63.amzn2.0.1.x86_64                                                       28/71
+  Updating   : glibc-locale-source-2.26-63.amzn2.0.1.x86_64                                                       29/71
+  Updating   : libtasn1-4.10-1.amzn2.0.6.x86_64                                                                   30/71
+  Updating   : kernel-tools-5.10.192-183.736.amzn2.x86_64                                                         31/71
+  Updating   : libjpeg-turbo-2.0.90-2.amzn2.0.5.x86_64                                                            32/71
+  Updating   : 2:libpng-1.5.13-8.amzn2.0.5.x86_64                                                                 33/71
+  Updating   : sudo-1.8.23-10.amzn2.3.4.x86_64                                                                    34/71
+  Updating   : libgomp-7.3.1-17.amzn2.x86_64                                                                      35/71
+  Installing : kernel-5.10.192-183.736.amzn2.x86_64                                                               36/71
+  Cleanup    : 12:dhclient-4.2.5-79.amzn2.1.4.x86_64                                                              37/71
+  Cleanup    : 32:bind-utils-9.11.4-26.P2.amzn2.13.3.x86_64                                                       38/71
+  Cleanup    : 32:bind-libs-9.11.4-26.P2.amzn2.13.3.x86_64                                                        39/71
+  Cleanup    : curl-8.2.1-1.amzn2.0.2.x86_64                                                                      40/71
+  Cleanup    : libcurl-8.2.1-1.amzn2.0.2.x86_64                                                                   41/71
+  Cleanup    : 32:bind-libs-lite-9.11.4-26.P2.amzn2.13.3.x86_64                                                   42/71
+  Cleanup    : openssh-clients-7.4p1-22.amzn2.0.3.x86_64                                                          43/71
+  Cleanup    : openssh-server-7.4p1-22.amzn2.0.3.x86_64                                                           44/71
+  Cleanup    : 1:openssl-1.0.2k-24.amzn2.0.7.x86_64                                                               45/71
+  Cleanup    : openssh-7.4p1-22.amzn2.0.3.x86_64                                                                  46/71
+  Cleanup    : libssh2-1.4.3-12.amzn2.2.4.x86_64                                                                  47/71
+  Cleanup    : 32:bind-export-libs-9.11.4-26.P2.amzn2.13.3.x86_64                                                 48/71
+  Cleanup    : libxml2-python-2.9.1-6.amzn2.5.10.x86_64                                                           49/71
+  Cleanup    : libstdc++-7.3.1-15.amzn2.x86_64                                                                    50/71
+  Cleanup    : glibc-locale-source-2.26-63.amzn2.x86_64                                                           51/71
+  Cleanup    : glibc-all-langpacks-2.26-63.amzn2.x86_64                                                           52/71
+  Cleanup    : 12:dhcp-common-4.2.5-79.amzn2.1.4.x86_64                                                           53/71
+  Cleanup    : 12:dhcp-libs-4.2.5-79.amzn2.1.4.x86_64                                                             54/71
+  Cleanup    : libgcc-7.3.1-15.amzn2.x86_64                                                                       55/71
+  Cleanup    : libxml2-2.9.1-6.amzn2.5.10.x86_64                                                                  56/71
+  Cleanup    : 1:openssl-libs-1.0.2k-24.amzn2.0.7.x86_64                                                          57/71
+  Cleanup    : libcrypt-2.26-63.amzn2.x86_64                                                                      58/71
+  Cleanup    : libidn2-2.3.0-1.amzn2.0.2.x86_64                                                                   59/71
+  Cleanup    : libnghttp2-1.41.0-1.amzn2.0.1.x86_64                                                               60/71
+  Cleanup    : libidn-1.28-4.amzn2.0.4.x86_64                                                                     61/71
+  Cleanup    : libgomp-7.3.1-15.amzn2.x86_64                                                                      62/71
+  Cleanup    : sudo-1.8.23-10.amzn2.3.3.x86_64                                                                    63/71
+  Cleanup    : 2:libpng-1.5.13-8.amzn2.0.3.x86_64                                                                 64/71
+  Cleanup    : libjpeg-turbo-2.0.90-2.amzn2.0.4.x86_64                                                            65/71
+  Cleanup    : kernel-tools-5.10.192-182.736.amzn2.x86_64                                                         66/71
+  Cleanup    : libtasn1-4.10-1.amzn2.0.5.x86_64                                                                   67/71
+  Cleanup    : 32:bind-license-9.11.4-26.P2.amzn2.13.3.noarch                                                     68/71
+  Cleanup    : glibc-common-2.26-63.amzn2.x86_64                                                                  69/71
+  Cleanup    : glibc-minimal-langpack-2.26-63.amzn2.x86_64                                                        70/71
+  Cleanup    : glibc-2.26-63.amzn2.x86_64                                                                         71/71
+  Verifying  : kernel-5.10.192-183.736.amzn2.x86_64                                                                1/71
+  Verifying  : 12:dhcp-libs-4.2.5-79.amzn2.1.5.x86_64                                                              2/71
+  Verifying  : libtasn1-4.10-1.amzn2.0.6.x86_64                                                                    3/71
+  Verifying  : openssh-server-7.4p1-22.amzn2.0.5.x86_64                                                            4/71
+  Verifying  : 32:bind-libs-lite-9.11.4-26.P2.amzn2.13.4.x86_64                                                    5/71
+  Verifying  : glibc-common-2.26-63.amzn2.0.1.x86_64                                                               6/71
+  Verifying  : libstdc++-7.3.1-17.amzn2.x86_64                                                                     7/71
+  Verifying  : 12:dhclient-4.2.5-79.amzn2.1.5.x86_64                                                               8/71
+  Verifying  : kernel-tools-5.10.192-183.736.amzn2.x86_64                                                          9/71
+  Verifying  : libidn-1.28-4.amzn2.0.5.x86_64                                                                     10/71
+  Verifying  : 32:bind-license-9.11.4-26.P2.amzn2.13.4.noarch                                                     11/71
+  Verifying  : libnghttp2-1.41.0-1.amzn2.0.3.x86_64                                                               12/71
+  Verifying  : libjpeg-turbo-2.0.90-2.amzn2.0.5.x86_64                                                            13/71
+  Verifying  : glibc-all-langpacks-2.26-63.amzn2.0.1.x86_64                                                       14/71
+  Verifying  : 32:bind-utils-9.11.4-26.P2.amzn2.13.4.x86_64                                                       15/71
+  Verifying  : libssh2-1.4.3-12.amzn2.2.5.x86_64                                                                  16/71
+  Verifying  : libcurl-8.2.1-1.amzn2.0.3.x86_64                                                                   17/71
+  Verifying  : libxml2-2.9.1-6.amzn2.5.12.x86_64                                                                  18/71
+  Verifying  : libgcc-7.3.1-17.amzn2.x86_64                                                                       19/71
+  Verifying  : 1:openssl-libs-1.0.2k-24.amzn2.0.9.x86_64                                                          20/71
+  Verifying  : libidn2-2.3.0-1.amzn2.0.3.x86_64                                                                   21/71
+  Verifying  : 2:libpng-1.5.13-8.amzn2.0.5.x86_64                                                                 22/71
+  Verifying  : glibc-locale-source-2.26-63.amzn2.0.1.x86_64                                                       23/71
+  Verifying  : 32:bind-libs-9.11.4-26.P2.amzn2.13.4.x86_64                                                        24/71
+  Verifying  : curl-8.2.1-1.amzn2.0.3.x86_64                                                                      25/71
+  Verifying  : glibc-2.26-63.amzn2.0.1.x86_64                                                                     26/71
+  Verifying  : libcrypt-2.26-63.amzn2.0.1.x86_64                                                                  27/71
+  Verifying  : 1:openssl-1.0.2k-24.amzn2.0.9.x86_64                                                               28/71
+  Verifying  : glibc-minimal-langpack-2.26-63.amzn2.0.1.x86_64                                                    29/71
+  Verifying  : 12:dhcp-common-4.2.5-79.amzn2.1.5.x86_64                                                           30/71
+  Verifying  : openssh-7.4p1-22.amzn2.0.5.x86_64                                                                  31/71
+  Verifying  : sudo-1.8.23-10.amzn2.3.4.x86_64                                                                    32/71
+  Verifying  : 32:bind-export-libs-9.11.4-26.P2.amzn2.13.4.x86_64                                                 33/71
+  Verifying  : libgomp-7.3.1-17.amzn2.x86_64                                                                      34/71
+  Verifying  : openssh-clients-7.4p1-22.amzn2.0.5.x86_64                                                          35/71
+  Verifying  : libxml2-python-2.9.1-6.amzn2.5.12.x86_64                                                           36/71
+  Verifying  : openssh-7.4p1-22.amzn2.0.3.x86_64                                                                  37/71
+  Verifying  : libssh2-1.4.3-12.amzn2.2.4.x86_64                                                                  38/71
+  Verifying  : kernel-tools-5.10.192-182.736.amzn2.x86_64                                                         39/71
+  Verifying  : libcurl-8.2.1-1.amzn2.0.2.x86_64                                                                   40/71
+  Verifying  : libstdc++-7.3.1-15.amzn2.x86_64                                                                    41/71
+  Verifying  : glibc-locale-source-2.26-63.amzn2.x86_64                                                           42/71
+  Verifying  : libidn2-2.3.0-1.amzn2.0.2.x86_64                                                                   43/71
+  Verifying  : glibc-2.26-63.amzn2.x86_64                                                                         44/71
+  Verifying  : 32:bind-license-9.11.4-26.P2.amzn2.13.3.noarch                                                     45/71
+  Verifying  : curl-8.2.1-1.amzn2.0.2.x86_64                                                                      46/71
+  Verifying  : 32:bind-libs-9.11.4-26.P2.amzn2.13.3.x86_64                                                        47/71
+  Verifying  : libgomp-7.3.1-15.amzn2.x86_64                                                                      48/71
+  Verifying  : 1:openssl-libs-1.0.2k-24.amzn2.0.7.x86_64                                                          49/71
+  Verifying  : openssh-server-7.4p1-22.amzn2.0.3.x86_64                                                           50/71
+  Verifying  : 32:bind-utils-9.11.4-26.P2.amzn2.13.3.x86_64                                                       51/71
+  Verifying  : glibc-common-2.26-63.amzn2.x86_64                                                                  52/71
+  Verifying  : 32:bind-libs-lite-9.11.4-26.P2.amzn2.13.3.x86_64                                                   53/71
+  Verifying  : libxml2-python-2.9.1-6.amzn2.5.10.x86_64                                                           54/71
+  Verifying  : glibc-all-langpacks-2.26-63.amzn2.x86_64                                                           55/71
+  Verifying  : glibc-minimal-langpack-2.26-63.amzn2.x86_64                                                        56/71
+  Verifying  : 2:libpng-1.5.13-8.amzn2.0.3.x86_64                                                                 57/71
+  Verifying  : libjpeg-turbo-2.0.90-2.amzn2.0.4.x86_64                                                            58/71
+  Verifying  : 1:openssl-1.0.2k-24.amzn2.0.7.x86_64                                                               59/71
+  Verifying  : sudo-1.8.23-10.amzn2.3.3.x86_64                                                                    60/71
+  Verifying  : 12:dhcp-common-4.2.5-79.amzn2.1.4.x86_64                                                           61/71
+  Verifying  : 12:dhcp-libs-4.2.5-79.amzn2.1.4.x86_64                                                             62/71
+  Verifying  : 12:dhclient-4.2.5-79.amzn2.1.4.x86_64                                                              63/71
+  Verifying  : libcrypt-2.26-63.amzn2.x86_64                                                                      64/71
+  Verifying  : 32:bind-export-libs-9.11.4-26.P2.amzn2.13.3.x86_64                                                 65/71
+  Verifying  : libxml2-2.9.1-6.amzn2.5.10.x86_64                                                                  66/71
+  Verifying  : libtasn1-4.10-1.amzn2.0.5.x86_64                                                                   67/71
+  Verifying  : libnghttp2-1.41.0-1.amzn2.0.1.x86_64                                                               68/71
+  Verifying  : openssh-clients-7.4p1-22.amzn2.0.3.x86_64                                                          69/71
+  Verifying  : libidn-1.28-4.amzn2.0.4.x86_64                                                                     70/71
+  Verifying  : libgcc-7.3.1-15.amzn2.x86_64                                                                       71/71
+
+Installed:
+  kernel.x86_64 0:5.10.192-183.736.amzn2
+
+Updated:
+  bind-export-libs.x86_64 32:9.11.4-26.P2.amzn2.13.4          bind-libs.x86_64 32:9.11.4-26.P2.amzn2.13.4
+  bind-libs-lite.x86_64 32:9.11.4-26.P2.amzn2.13.4            bind-license.noarch 32:9.11.4-26.P2.amzn2.13.4
+  bind-utils.x86_64 32:9.11.4-26.P2.amzn2.13.4                curl.x86_64 0:8.2.1-1.amzn2.0.3
+  dhclient.x86_64 12:4.2.5-79.amzn2.1.5                       dhcp-common.x86_64 12:4.2.5-79.amzn2.1.5
+  dhcp-libs.x86_64 12:4.2.5-79.amzn2.1.5                      glibc.x86_64 0:2.26-63.amzn2.0.1
+  glibc-all-langpacks.x86_64 0:2.26-63.amzn2.0.1              glibc-common.x86_64 0:2.26-63.amzn2.0.1
+  glibc-locale-source.x86_64 0:2.26-63.amzn2.0.1              glibc-minimal-langpack.x86_64 0:2.26-63.amzn2.0.1
+  kernel-tools.x86_64 0:5.10.192-183.736.amzn2                libcrypt.x86_64 0:2.26-63.amzn2.0.1
+  libcurl.x86_64 0:8.2.1-1.amzn2.0.3                          libgcc.x86_64 0:7.3.1-17.amzn2
+  libgomp.x86_64 0:7.3.1-17.amzn2                             libidn.x86_64 0:1.28-4.amzn2.0.5
+  libidn2.x86_64 0:2.3.0-1.amzn2.0.3                          libjpeg-turbo.x86_64 0:2.0.90-2.amzn2.0.5
+  libnghttp2.x86_64 0:1.41.0-1.amzn2.0.3                      libpng.x86_64 2:1.5.13-8.amzn2.0.5
+  libssh2.x86_64 0:1.4.3-12.amzn2.2.5                         libstdc++.x86_64 0:7.3.1-17.amzn2
+  libtasn1.x86_64 0:4.10-1.amzn2.0.6                          libxml2.x86_64 0:2.9.1-6.amzn2.5.12
+  libxml2-python.x86_64 0:2.9.1-6.amzn2.5.12                  openssh.x86_64 0:7.4p1-22.amzn2.0.5
+  openssh-clients.x86_64 0:7.4p1-22.amzn2.0.5                 openssh-server.x86_64 0:7.4p1-22.amzn2.0.5
+  openssl.x86_64 1:1.0.2k-24.amzn2.0.9                        openssl-libs.x86_64 1:1.0.2k-24.amzn2.0.9
+  sudo.x86_64 0:1.8.23-10.amzn2.3.4
+
+Complete!
+[ec2-user@ip-172-31-31-147 ~]$ sudo su -
+[root@ip-172-31-31-147 ~]# fdisk -l
+Disk /dev/xvda: 8 GiB, 8589934592 bytes, 16777216 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+Disklabel type: gpt
+Disk identifier: 12DB3344-83FA-4BD1-B32F-DF214C0C9A96
+
+Device       Start      End  Sectors Size Type
+/dev/xvda1    4096 16777182 16773087   8G Linux filesystem
+/dev/xvda128  2048     4095     2048   1M BIOS boot
+
+Partition table entries are not in disk order.
+
+
+Disk /dev/xvdb: 1 GiB, 1073741824 bytes, 2097152 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+[root@ip-172-31-31-147 ~]# mkfs -t ext3 /dev/xvdb
+mke2fs 1.42.9 (28-Dec-2013)
+Filesystem label=
+OS type: Linux
+Block size=4096 (log=2)
+Fragment size=4096 (log=2)
+Stride=0 blocks, Stripe width=0 blocks
+65536 inodes, 262144 blocks
+13107 blocks (5.00%) reserved for the super user
+First data block=0
+Maximum filesystem blocks=268435456
+8 block groups
+32768 blocks per group, 32768 fragments per group
+8192 inodes per group
+Superblock backups stored on blocks:
+        32768, 98304, 163840, 229376
+
+Allocating group tables: done
+Writing inode tables: done
+Creating journal (8192 blocks): done
+Writing superblocks and filesystem accounting information: done
+
+[root@ip-172-31-31-147 ~]# file -s /dev/xvdb
+/dev/xvdb: Linux rev 1.0 ext3 filesystem data, UUID=fea17bfd-8c02-4d20-9e3f-e90a504aba4c (large files)
+[root@ip-172-31-31-147 ~]# echo "UUID=fea17bfd-8c02-4d20-9e3f-e90a504aba4c /data ext3 noatime 0 0" >> /etc/fstab
+[root@ip-172-31-31-147 ~]# mkdir /data
+[root@ip-172-31-31-147 ~]# mount /data
+[root@ip-172-31-31-147 ~]# fdisk -l
+Disk /dev/xvda: 8 GiB, 8589934592 bytes, 16777216 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+Disklabel type: gpt
+Disk identifier: 12DB3344-83FA-4BD1-B32F-DF214C0C9A96
+
+Device       Start      End  Sectors Size Type
+/dev/xvda1    4096 16777182 16773087   8G Linux filesystem
+/dev/xvda128  2048     4095     2048   1M BIOS boot
+
+Partition table entries are not in disk order.
+
+
+Disk /dev/xvdb: 1 GiB, 1073741824 bytes, 2097152 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+[root@ip-172-31-31-147 ~]# exit
+logout
+[ec2-user@ip-172-31-31-147 ~]$ sudo yum install -y docker
+Loaded plugins: extras_suggestions, langpacks, priorities, update-motd
+amzn2-core                                                                                       | 3.7 kB  00:00:00
+Resolving Dependencies
+--> Running transaction check
+---> Package docker.x86_64 0:20.10.23-1.amzn2.0.1 will be installed
+--> Processing Dependency: runc >= 1.0.0 for package: docker-20.10.23-1.amzn2.0.1.x86_64
+--> Processing Dependency: libcgroup >= 0.40.rc1-5.15 for package: docker-20.10.23-1.amzn2.0.1.x86_64
+--> Processing Dependency: containerd >= 1.3.2 for package: docker-20.10.23-1.amzn2.0.1.x86_64
+--> Processing Dependency: pigz for package: docker-20.10.23-1.amzn2.0.1.x86_64
+--> Running transaction check
+---> Package containerd.x86_64 0:1.6.19-1.amzn2.0.3 will be installed
+---> Package libcgroup.x86_64 0:0.41-21.amzn2 will be installed
+---> Package pigz.x86_64 0:2.3.4-1.amzn2.0.1 will be installed
+---> Package runc.x86_64 0:1.1.7-3.amzn2 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+========================================================================================================================
+ Package                  Arch                 Version                            Repository                       Size
+========================================================================================================================
+Installing:
+ docker                   x86_64               20.10.23-1.amzn2.0.1               amzn2extra-docker                41 M
+Installing for dependencies:
+ containerd               x86_64               1.6.19-1.amzn2.0.3                 amzn2extra-docker                28 M
+ libcgroup                x86_64               0.41-21.amzn2                      amzn2-core                       66 k
+ pigz                     x86_64               2.3.4-1.amzn2.0.1                  amzn2-core                       81 k
+ runc                     x86_64               1.1.7-3.amzn2                      amzn2extra-docker               3.0 M
+
+Transaction Summary
+========================================================================================================================
+Install  1 Package (+4 Dependent packages)
+
+Total download size: 73 M
+Installed size: 274 M
+Downloading packages:
+(1/5): libcgroup-0.41-21.amzn2.x86_64.rpm                                                        |  66 kB  00:00:00
+(2/5): pigz-2.3.4-1.amzn2.0.1.x86_64.rpm                                                         |  81 kB  00:00:00
+(3/5): containerd-1.6.19-1.amzn2.0.3.x86_64.rpm                                                  |  28 MB  00:00:00
+(4/5): docker-20.10.23-1.amzn2.0.1.x86_64.rpm                                                    |  41 MB  00:00:00
+(5/5): runc-1.1.7-3.amzn2.x86_64.rpm                                                             | 3.0 MB  00:00:00
+------------------------------------------------------------------------------------------------------------------------
+Total                                                                                    77 MB/s |  73 MB  00:00:00
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  Installing : runc-1.1.7-3.amzn2.x86_64                                                                            1/5
+  Installing : containerd-1.6.19-1.amzn2.0.3.x86_64                                                                 2/5
+  Installing : libcgroup-0.41-21.amzn2.x86_64                                                                       3/5
+  Installing : pigz-2.3.4-1.amzn2.0.1.x86_64                                                                        4/5
+  Installing : docker-20.10.23-1.amzn2.0.1.x86_64                                                                   5/5
+  Verifying  : containerd-1.6.19-1.amzn2.0.3.x86_64                                                                 1/5
+  Verifying  : runc-1.1.7-3.amzn2.x86_64                                                                            2/5
+  Verifying  : docker-20.10.23-1.amzn2.0.1.x86_64                                                                   3/5
+  Verifying  : pigz-2.3.4-1.amzn2.0.1.x86_64                                                                        4/5
+  Verifying  : libcgroup-0.41-21.amzn2.x86_64                                                                       5/5
+
+Installed:
+  docker.x86_64 0:20.10.23-1.amzn2.0.1
+
+Dependency Installed:
+  containerd.x86_64 0:1.6.19-1.amzn2.0.3      libcgroup.x86_64 0:0.41-21.amzn2      pigz.x86_64 0:2.3.4-1.amzn2.0.1
+  runc.x86_64 0:1.1.7-3.amzn2
+
+Complete!
+
+[ec2-user@ip-172-31-31-147 ~]$ service docker start
+Redirecting to /bin/systemctl start docker.service
+Failed to start docker.service: The name org.freedesktop.PolicyKit1 was not provided by any .service files
+See system logs and 'systemctl status docker.service' for details.
+[ec2-user@ip-172-31-31-147 ~]$ sudo service docker start
+Redirecting to /bin/systemctl start docker.service
+[ec2-user@ip-172-31-31-147 ~]$ docker network create --driver bridge cs548-network
+Got permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Post "http://%2Fvar%2Frun%2Fdocker.sock/v1.24/networks/create": dial unix /var/run/docker.sock: connect: permission denied
+[ec2-user@ip-172-31-31-147 ~]$ sudo docker network create --driver bridge cs548-network
+32c83e0e9194f3115365ddb92c4b1c18cae4f04b296ed18e4a738e2be1757471
+[ec2-user@ip-172-31-31-147 ~]$ sudo docker pull postgres
+Using default tag: latest
+latest: Pulling from library/postgres
+360eba32fa65: Pull complete
+6987678f9780: Pull complete
+42299245e905: Pull complete
+afcda32ad76a: Pull complete
+23d81c750666: Pull complete
+c7813914a8b7: Pull complete
+876fecb4c432: Pull complete
+0a8727713246: Pull complete
+bd55a69456f7: Pull complete
+e8a9c6f88b3a: Pull complete
+4f8b906dc57f: Pull complete
+6fa3ed8d5047: Pull complete
+5ae8c52f2732: Pull complete
+Digest: sha256:d0c68cd506cde10ddd890e77f98339a4f05810ffba99c881061a12b30a0525c9
+Status: Downloaded newer image for postgres:latest
+docker.io/library/postgres:latest
+[ec2-user@ip-172-31-31-147 ~]$ sudo docker run -d --name cs548db --network cs548-network -p 5432:5432 -v /data:/var/lib/postgresql/data -e POSTGRES_PASSWORD=0000 -e PGDATA=/var/lib/postgresql/data/pgdata postgres
+2a98dbad48c77e8dd694af58f39871e8bc31c63ef56a3889e54f6e5ffaab8de6
+[ec2-user@ip-172-31-31-147 ~]$ sudo docker ps
+CONTAINER ID   IMAGE      COMMAND                  CREATED          STATUS         PORTS                                       NAMES
+2a98dbad48c7   postgres   "docker-entrypoint.s…"   10 seconds ago   Up 9 seconds   0.0.0.0:5432->5432/tcp, :::5432->5432/tcp   cs548db
+[ec2-user@ip-172-31-31-147 ~]$ sudo docker run -it --rm --network cs548-network postgres /bin/bash
+root@78fc94b073b6:/# createuser cs548user -P --createdb -h cs548db -U postgres
+Enter password for new role:
+Enter it again:
+Password:
+root@78fc94b073b6:/# exit
+exit
+[ec2-user@ip-172-31-31-147 ~]$ sudo docker run -it --rm --network cs548-network postgres psql -h cs548db -U postgres
+Password for user postgres:
+psql (15.4 (Debian 15.4-1.pgdg120+1))
+Type "help" for help.
+
+postgres=# create database cs548 with owner cs548user;
+CREATE DATABASE
+postgres=# \q
+[ec2-user@ip-172-31-31-147 ~]$ ls
+chat-webapp.war
+[ec2-user@ip-172-31-31-147 ~]$ mkdir cs548-payara
+[ec2-user@ip-172-31-31-147 ~]$ mv chat-webapp.war cs548-payara/
+[ec2-user@ip-172-31-31-147 ~]$ cd cs548-payara/
+[ec2-user@ip-172-31-31-147 cs548-payara]$ vi Dockerfile
+[ec2-user@ip-172-31-31-147 cs548-payara]$ sudo docker build -t cs548/chat .
+Sending build context to Docker daemon  1.299MB
+Step 1/3 : FROM payara/micro:6.2023.6-jdk17
+6.2023.6-jdk17: Pulling from payara/micro
+0ce1dd7918a4: Pull complete
+9ca38d804130: Pull complete
+1e839a827587: Pull complete
+29d7ded01c80: Pull complete
+37a1f490c6e4: Pull complete
+Digest: sha256:1b8d972d42e01feedc85c1625dfb8e473f2ad37e5c0e1e860814a814e4351e6f
+Status: Downloaded newer image for payara/micro:6.2023.6-jdk17
+ ---> c32dac521273
+Step 2/3 : COPY --chown=payara:payara chat-webapp.war ${DEPLOY_DIR}
+ ---> 4db8b072fbb2
+Step 3/3 : CMD [ "--contextroot", "chat","--deploy", "/opt/payara/deployments/chat-webapp.war" ]
+ ---> Running in ddaf57a56ac9
+Removing intermediate container ddaf57a56ac9
+ ---> 6daece129cb9
+Successfully built 6daece129cb9
+Successfully tagged cs548/chat:latest
+[ec2-user@ip-172-31-31-147 cs548-payara]$ docker images
+Got permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Get "http://%2Fvar%2Frun%2Fdocker.sock/v1.24/images/json": dial unix /var/run/docker.sock: connect: permission denied
+[ec2-user@ip-172-31-31-147 cs548-payara]$ sudo docker images
+REPOSITORY     TAG              IMAGE ID       CREATED          SIZE
+cs548/chat     latest           6daece129cb9   51 seconds ago   386MB
+postgres       latest           69e765e8cdbe   6 days ago       412MB
+payara/micro   6.2023.6-jdk17   c32dac521273   3 months ago     385MB
+[ec2-user@ip-172-31-31-147 cs548-payara]$ cd ..
+
+[ec2-user@ip-172-31-31-147 ~]$ sudo docker run -d --name chat --network cs548-network -p 8080:8080 -p 8181:8181 -e DATAB
+ASE_USERNAME=cs548user -e DATABASE_PASSWORD=0000 -e DATABASE=cs548 -e DATABASE_HOST=cs548db cs548/chat
+b70af771281b62e4a4bf4c62ceeb7489bf18a10df96830c37b4951c44a4fc756
+[ec2-user@ip-172-31-31-147 ~]$ sudo docker images
+REPOSITORY     TAG              IMAGE ID       CREATED         SIZE
+cs548/chat     latest           6daece129cb9   7 minutes ago   386MB
+postgres       latest           69e765e8cdbe   6 days ago      412MB
+payara/micro   6.2023.6-jdk17   c32dac521273   3 months ago    385MB
+
+[ec2-user@ip-172-31-31-147 ~]$ docker ps
+Got permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Get "http://%2Fvar%2Frun%2Fdocker.sock/v1.24/containers/json": dial unix /var/run/docker.sock: connect: permission denied
+[ec2-user@ip-172-31-31-147 ~]$ sudo docker ps
+CONTAINER ID   IMAGE        COMMAND                  CREATED          STATUS          PORTS                                                                                            NAMES
+b70af771281b   cs548/chat   "/bin/sh entrypoint.…"   3 minutes ago    Up 3 minutes    0.0.0.0:8080->8080/tcp, :::8080->8080/tcp, 6900/tcp, 0.0.0.0:8181->8181/tcp, :::8181->8181/tcp   chat
+2a98dbad48c7   postgres     "docker-entrypoint.s…"   17 minutes ago   Up 17 minutes   0.0.0.0:5432->5432/tcp, :::5432->5432/tcp                                                        cs548db
+[ec2-user@ip-172-31-31-147 ~]$ sudo docker logs b70af771281b
+[2023-09-13T20:42:20.806+0000] [] [WARNING] [] [PayaraMicro] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1694637740806] [levelValue: 900] Payara Micro Runtime directory is located in a temporary file location which can be cleaned by system processes.
+
+[2023-09-13T20:42:20.896+0000] [] [INFO] [] [PayaraMicro] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1694637740896] [levelValue: 800] Payara Micro Runtime directory is located at /tmp/payaramicro-rt17379473131077991542tmp
+
+[2023-09-13T20:42:20.920+0000] [] [INFO] [] [fish.payara.micro.boot.runtime.PayaraMicroRuntimeBuilder] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1694637740920] [levelValue: 800] Built Payara Micro Runtime
+
+[2023-09-13T20:42:23.880+0000] [] [INFO] [] [fish.payara.boot.runtime.BootCommand] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1694637743880] [levelValue: 800] [[
+  Boot Command set returned with result SUCCESS : PlainTextActionReporterSUCCESSDescription: set AdminCommandnull
+    configs.config.server-config.hazelcast-config-specific-configuration.lite=false
+]]
+
+[2023-09-13T20:42:23.949+0000] [] [INFO] [] [fish.payara.boot.runtime.BootCommand] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1694637743949] [levelValue: 800] [[
+  Boot Command set returned with result SUCCESS : PlainTextActionReporterSUCCESSDescription: set AdminCommandnull
+    hazelcast-runtime-configuration.host-aware-partitioning=true
+]]
+
+[2023-09-13T20:42:23.970+0000] [] [INFO] [] [fish.payara.boot.runtime.BootCommand] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1694637743970] [levelValue: 800] [[
+  Boot Command set returned with result SUCCESS : PlainTextActionReporterSUCCESSDescription: set AdminCommandnull
+    hazelcast-runtime-configuration.discovery-mode=multicast
+]]
+
+[2023-09-13T20:42:25.512+0000] [] [INFO] [] [org.glassfish.ha.store.spi.BackingStoreFactoryRegistry] [tid: _ThreadID=23 _ThreadName=RunLevelControllerThread-1694637743991] [timeMillis: 1694637745512] [levelValue: 800] Registered fish.payara.ha.hazelcast.store.HazelcastBackingStoreFactoryProxy for persistence-type = hazelcast in BackingStoreFactoryRegistry
+
+[2023-09-13T20:42:30.944+0000] [] [INFO] [] [fish.payara.nucleus.hazelcast.HazelcastCore] [tid: _ThreadID=24 _ThreadName=RunLevelControllerThread-1694637744001] [timeMillis: 1694637750944] [levelValue: 800] Hazelcast Instance Bound to JNDI at payara/Hazelcast
+
+[2023-09-13T20:42:30.953+0000] [] [INFO] [] [fish.payara.nucleus.hazelcast.HazelcastCore] [tid: _ThreadID=24 _ThreadName=RunLevelControllerThread-1694637744001] [timeMillis: 1694637750953] [levelValue: 800] JSR107 Caching Provider Bound to JNDI at payara/CachingProvider
+
+[2023-09-13T20:42:30.953+0000] [] [INFO] [] [fish.payara.nucleus.hazelcast.HazelcastCore] [tid: _ThreadID=24 _ThreadName=RunLevelControllerThread-1694637744001] [timeMillis: 1694637750953] [levelValue: 800] JSR107 Default Cache Manager Bound to JNDI at payara/CacheManager
+
+[2023-09-13T20:42:31.388+0000] [] [INFO] [NCLS-CORE-00101] [javax.enterprise.system.core] [tid: _ThreadID=24 _ThreadName=RunLevelControllerThread-1694637744001] [timeMillis: 1694637751388] [levelValue: 800] Network Listener http-listener started in: 26ms - bound to [/0.0.0.0:8080]
+
+[2023-09-13T20:42:31.397+0000] [] [INFO] [NCLS-CORE-00058] [javax.enterprise.system.core] [tid: _ThreadID=24 _ThreadName=RunLevelControllerThread-1694637744001] [timeMillis: 1694637751397] [levelValue: 800] Network listener https-listener on port 8443 disabled per domain.xml
+
+[2023-09-13T20:42:31.401+0000] [] [INFO] [NCLS-CORE-00087] [javax.enterprise.system.core] [tid: _ThreadID=24 _ThreadName=RunLevelControllerThread-1694637744001] [timeMillis: 1694637751401] [levelValue: 800] Grizzly 4.0.0 started in: 6,421ms - bound to [http-listener:8080]
+
+[2023-09-13T20:42:31.695+0000] [] [INFO] [] [fish.payara.nucleus.cluster.PayaraCluster] [tid: _ThreadID=73 _ThreadName=Executor-Service-3] [timeMillis: 1694637751695] [levelValue: 800] [[
+  Data Grid Status
+Payara Data Grid State: DG Version: 5 DG Name: development DG Size: 1
+Instances: {
+ DataGrid: development Name: Lovely-Batfish Lite: false This: true UUID: 05f5b025-b32f-4a81-b06c-1d10ac282661 Address: /172.18.0.3:6900
+}]]
+
+[2023-09-13T20:42:31.703+0000] [] [INFO] [NCLS-CORE-00017] [javax.enterprise.system.core] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1694637751703] [levelValue: 800] Payara Micro 6.2023.6 #badassmicrofish (918) startup time : Embedded (3,045ms), startup services(7,733ms), total(10,778ms)
+
+[2023-09-13T20:42:31.964+0000] [] [INFO] [NCLS-JMX-00006] [javax.enterprise.system.jmx] [tid: _ThreadID=84 _ThreadName=Thread-12] [timeMillis: 1694637751964] [levelValue: 800] JMXStartupService has disabled JMXConnector system
+
+[2023-09-13T20:42:34.492+0000] [] [INFO] [] [] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1694637754492] [levelValue: 800] Cannot find the resource bundle for the name com.sun.logging.enterprise.system.container.ejb for class com.sun.ejb.containers.EjbAsyncInvocationManager using fish.payara.micro.boot.loader.ExplodedURLClassloader@506e1b77
+
+[2023-09-13T20:42:34.533+0000] [] [INFO] [] [] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1694637754533] [levelValue: 800] Cannot find the resource bundle for the name com.sun.logging.enterprise.system.container.ejb for class com.sun.ejb.base.io.EJBObjectOutputStreamHandler using fish.payara.micro.boot.loader.ExplodedURLClassloader@506e1b77
+
+[2023-09-13T20:42:34.912+0000] [] [INFO] [NCLS-SECURITY-01002] [javax.enterprise.system.core.security] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1694637754912] [levelValue: 800] Java security manager is disabled.
+
+[2023-09-13T20:42:34.917+0000] [] [INFO] [NCLS-SECURITY-01010] [javax.enterprise.system.core.security] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1694637754917] [levelValue: 800] Entering Security Startup Service.
+
+[2023-09-13T20:42:34.919+0000] [] [INFO] [NCLS-SECURITY-01143] [javax.enterprise.system.core.security] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1694637754919] [levelValue: 800] Loading policy provider fish.payara.security.jacc.provider.PolicyProviderImpl.
+
+[2023-09-13T20:42:34.984+0000] [] [INFO] [NCLS-SECURITY-01011] [javax.enterprise.system.core.security] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1694637754984] [levelValue: 800] Security Service(s) started successfully.
+
+[2023-09-13T20:42:35.865+0000] [] [INFO] [AS-WEB-GLUE-00198] [jakarta.enterprise.web] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1694637755865] [levelValue: 800] Created HTTP listener http-listener on host/port 0.0.0.0:8080
+
+[2023-09-13T20:42:35.926+0000] [] [INFO] [AS-WEB-GLUE-00200] [jakarta.enterprise.web] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1694637755926] [levelValue: 800] Created virtual server server
+
+[2023-09-13T20:42:36.592+0000] [] [INFO] [AS-WEB-GLUE-00201] [jakarta.enterprise.web] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1694637756592] [levelValue: 800] Virtual server server loaded default web module
+
+[2023-09-13T20:42:39.263+0000] [] [WARNING] [] [javax.enterprise.resource.resourceadapter.org.glassfish.jdbc.deployer] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1694637759263] [levelValue: 900] Value of maxPoolSize Given, -1, was outside the bounds, default value of 32 will be used - PLEASE UPDATE YOUR VALUE
+
+[2023-09-13T20:42:39.263+0000] [] [WARNING] [] [javax.enterprise.resource.resourceadapter.org.glassfish.jdbc.deployer] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1694637759263] [levelValue: 900] Value of steadyPoolSize Given, -1, was outside the bounds, default value of 8 will be used - PLEASE UPDATE YOUR VALUE
+
+[2023-09-13T20:42:40.976+0000] [] [WARNING] [] [jakarta.enterprise.web.util] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1694637760976] [levelValue: 900] The web application [unknown] registered the JDBC driver [org.postgresql.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+
+[2023-09-13T20:42:41.147+0000] [] [INFO] [] [org.eclipse.persistence.session./file:/tmp/payaramicro-rt17379473131077991542tmp/applications/chat-webapp/WEB-INF/lib/chat-domain-1.0.0.jar_chat-domain] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1694637761147] [levelValue: 800] EclipseLink, version: Eclipse Persistence Services - 4.0.1.payara-p1.v202304041433
+
+[2023-09-13T20:42:42.262+0000] [] [FINE] [] [org.eclipse.persistence.session./file:/tmp/payaramicro-rt17379473131077991542tmp/applications/chat-webapp/WEB-INF/lib/chat-domain-1.0.0.jar_chat-domain.sql] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1694637762262] [levelValue: 500] SELECT * FROM SEQUENCE WHERE SEQ_NAME = 'SEQ_GEN'
+
+[2023-09-13T20:42:42.273+0000] [] [FINE] [] [org.eclipse.persistence.session./file:/tmp/payaramicro-rt17379473131077991542tmp/applications/chat-webapp/WEB-INF/lib/chat-domain-1.0.0.jar_chat-domain.sql] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1694637762273] [levelValue: 500] INSERT INTO SEQUENCE(SEQ_NAME, SEQ_COUNT) values ('SEQ_GEN', 0)
+
+[2023-09-13T20:42:42.278+0000] [] [FINE] [] [org.eclipse.persistence.session./file:/tmp/payaramicro-rt17379473131077991542tmp/applications/chat-webapp/WEB-INF/lib/chat-domain-1.0.0.jar_chat-domain.sql] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1694637762278] [levelValue: 500] SELECT * FROM SEQUENCE WHERE SEQ_NAME = 'SEQ_GEN'
+
+[2023-09-13T20:42:42.341+0000] [] [INFO] [] [org.jboss.weld.Version] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1694637762341] [levelValue: 800] WELD-000900: 5.0.1 (Final)
+
+[2023-09-13T20:42:42.609+0000] [] [INFO] [] [] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1694637762609] [levelValue: 800] Cannot find the resource bundle for the name com.sun.logging.enterprise.system.container.ejb for class org.glassfish.ejb.security.application.EjbSecurityComponentInvocationHandler using fish.payara.micro.boot.loader.ExplodedURLClassloader@506e1b77
+
+[2023-09-13T20:42:42.674+0000] [] [INFO] [] [] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1694637762674] [levelValue: 800] Cannot find the resource bundle for the name com.sun.logging.enterprise.system.container.ejb for class com.sun.ejb.EJBUtils using fish.payara.micro.boot.loader.ExplodedURLClassloader@506e1b77
+
+[2023-09-13T20:42:42.738+0000] [] [INFO] [AS-EJB-00054] [jakarta.enterprise.ejb.container] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1694637762738] [levelValue: 800] Portable JNDI names for EJB InitBean: [java:global/chat-webapp/InitBean, java:global/chat-webapp/InitBean!edu.stevens.cs548.chat.init.InitBean]
+
+[2023-09-13T20:42:46.419+0000] [] [INFO] [] [fish.payara.micro.cdi.extension.ClusteredCDIEventBusImpl] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1694637766419] [levelValue: 800] Clustered CDI Event bus initialized
+
+[2023-09-13T20:42:46.662+0000] [] [INFO] [] [javax.enterprise.system.core] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1694637766662] [levelValue: 800] chat-webapp was successfully deployed in 14,360 milliseconds.
+
+[2023-09-13T20:42:46.669+0000] [] [INFO] [] [PayaraMicro] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1694637766669] [levelValue: 800] Deployed 1 archive(s)
+
+[2023-09-13T20:42:46.742+0000] [] [INFO] [] [edu.stevens.cs548.chat.init.InitBean] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1694637766742] [levelValue: 800] Initilizing by emptying the chat message database....
+
+[2023-09-13T20:42:46.836+0000] [] [INFO] [] [edu.stevens.cs548.chat.init.InitBean] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1694637766836] [levelValue: 800] ...chat message database has been cleared.
+
+[2023-09-13T20:42:46.855+0000] [] [INFO] [AS-WEB-GLUE-00130] [jakarta.enterprise.web] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1694637766855] [levelValue: 800] Invalid Session Management Configuration for non-distributable app [chat-webapp] - defaulting to memory: persistence-type = [hazelcast] / persistenceFrequency = [web-method] / persistenceScope = [modified-session]
+
+[2023-09-13T20:42:46.929+0000] [] [INFO] [] [org.glassfish.soteria.servlet.SamRegistrationInstaller] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1694637766929] [levelValue: 800] Initializing Soteria 3.0.1.payara-p1 for context '/chat'
+
+[2023-09-13T20:42:47.022+0000] [] [INFO] [faces.config.listener.version] [jakarta.enterprise.resource.webcontainer.faces.config] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1694637767022] [levelValue: 800] Initializing Mojarra 4.0.0.payara-p2 for context '/chat'
+
+[2023-09-13T20:42:48.319+0000] [] [INFO] [AS-WEB-GLUE-00172] [jakarta.enterprise.web] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1694637768319] [levelValue: 800] Loading application [chat-webapp] at [/chat]
+
+[2023-09-13T20:42:48.357+0000] [] [INFO] [] [PayaraMicro] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1694637768357] [levelValue: 800] [[
+  {
+    "Instance Configuration": {
+        "Host": "b70af771281b",
+        "Http Port(s)": "8080",
+        "Https Port(s)": "",
+        "Instance Name": "Lovely-Batfish",
+        "Instance Group": "MicroShoal",
+        "Hazelcast Member UUID": "05f5b025-b32f-4a81-b06c-1d10ac282661",
+        "Deployed": [
+            {
+                "Name": "chat-webapp",
+                "Type": "war",
+                "Context Root": "/chat"
+            }
+        ]
+    }
+}]]
+
+[2023-09-13T20:42:48.369+0000] [] [INFO] [] [PayaraMicro] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1694637768369] [levelValue: 800] [[
+
+Payara Micro URLs:
+http://b70af771281b:8080/chat
+
+]]
+
+[2023-09-13T20:42:48.369+0000] [] [INFO] [] [PayaraMicro] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1694637768369] [levelValue: 800] Payara Micro 6.2023.6 #badassmicrofish (build 918) ready in 27,711 (ms)
+
+[ec2-user@ip-172-31-31-147 ~]$ sudo docker logs b70af771281b >& LOG
+[ec2-user@ip-172-31-31-147 ~]$ tail -100 LOG
+
+[2023-09-13T20:42:31.401+0000] [] [INFO] [NCLS-CORE-00087] [javax.enterprise.system.core] [tid: _ThreadID=24 _ThreadName=RunLevelControllerThread-1694637744001] [timeMillis: 1694637751401] [levelValue: 800] Grizzly 4.0.0 started in: 6,421ms - bound to [http-listener:8080]
+
+[2023-09-13T20:42:31.695+0000] [] [INFO] [] [fish.payara.nucleus.cluster.PayaraCluster] [tid: _ThreadID=73 _ThreadName=Executor-Service-3] [timeMillis: 1694637751695] [levelValue: 800] [[
+  Data Grid Status
+Payara Data Grid State: DG Version: 5 DG Name: development DG Size: 1
+Instances: {
+ DataGrid: development Name: Lovely-Batfish Lite: false This: true UUID: 05f5b025-b32f-4a81-b06c-1d10ac282661 Address: /172.18.0.3:6900
+}]]
+
+[2023-09-13T20:42:31.703+0000] [] [INFO] [NCLS-CORE-00017] [javax.enterprise.system.core] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1694637751703] [levelValue: 800] Payara Micro 6.2023.6 #badassmicrofish (918) startup time : Embedded (3,045ms), startup services(7,733ms), total(10,778ms)
+
+[2023-09-13T20:42:31.964+0000] [] [INFO] [NCLS-JMX-00006] [javax.enterprise.system.jmx] [tid: _ThreadID=84 _ThreadName=Thread-12] [timeMillis: 1694637751964] [levelValue: 800] JMXStartupService has disabled JMXConnector system
+
+[2023-09-13T20:42:34.492+0000] [] [INFO] [] [] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1694637754492] [levelValue: 800] Cannot find the resource bundle for the name com.sun.logging.enterprise.system.container.ejb for class com.sun.ejb.containers.EjbAsyncInvocationManager using fish.payara.micro.boot.loader.ExplodedURLClassloader@506e1b77
+
+[2023-09-13T20:42:34.533+0000] [] [INFO] [] [] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1694637754533] [levelValue: 800] Cannot find the resource bundle for the name com.sun.logging.enterprise.system.container.ejb for class com.sun.ejb.base.io.EJBObjectOutputStreamHandler using fish.payara.micro.boot.loader.ExplodedURLClassloader@506e1b77
+
+[2023-09-13T20:42:34.912+0000] [] [INFO] [NCLS-SECURITY-01002] [javax.enterprise.system.core.security] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1694637754912] [levelValue: 800] Java security manager is disabled.
+
+[2023-09-13T20:42:34.917+0000] [] [INFO] [NCLS-SECURITY-01010] [javax.enterprise.system.core.security] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1694637754917] [levelValue: 800] Entering Security Startup Service.
+
+[2023-09-13T20:42:34.919+0000] [] [INFO] [NCLS-SECURITY-01143] [javax.enterprise.system.core.security] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1694637754919] [levelValue: 800] Loading policy provider fish.payara.security.jacc.provider.PolicyProviderImpl.
+
+[2023-09-13T20:42:34.984+0000] [] [INFO] [NCLS-SECURITY-01011] [javax.enterprise.system.core.security] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1694637754984] [levelValue: 800] Security Service(s) started successfully.
+
+[2023-09-13T20:42:35.865+0000] [] [INFO] [AS-WEB-GLUE-00198] [jakarta.enterprise.web] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1694637755865] [levelValue: 800] Created HTTP listener http-listener on host/port 0.0.0.0:8080
+
+[2023-09-13T20:42:35.926+0000] [] [INFO] [AS-WEB-GLUE-00200] [jakarta.enterprise.web] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1694637755926] [levelValue: 800] Created virtual server server
+
+[2023-09-13T20:42:36.592+0000] [] [INFO] [AS-WEB-GLUE-00201] [jakarta.enterprise.web] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1694637756592] [levelValue: 800] Virtual server server loaded default web module
+
+[2023-09-13T20:42:39.263+0000] [] [WARNING] [] [javax.enterprise.resource.resourceadapter.org.glassfish.jdbc.deployer] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1694637759263] [levelValue: 900] Value of maxPoolSize Given, -1, was outside the bounds, default value of 32 will be used - PLEASE UPDATE YOUR VALUE
+
+[2023-09-13T20:42:39.263+0000] [] [WARNING] [] [javax.enterprise.resource.resourceadapter.org.glassfish.jdbc.deployer] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1694637759263] [levelValue: 900] Value of steadyPoolSize Given, -1, was outside the bounds, default value of 8 will be used - PLEASE UPDATE YOUR VALUE
+
+[2023-09-13T20:42:40.976+0000] [] [WARNING] [] [jakarta.enterprise.web.util] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1694637760976] [levelValue: 900] The web application [unknown] registered the JDBC driver [org.postgresql.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+
+[2023-09-13T20:42:41.147+0000] [] [INFO] [] [org.eclipse.persistence.session./file:/tmp/payaramicro-rt17379473131077991542tmp/applications/chat-webapp/WEB-INF/lib/chat-domain-1.0.0.jar_chat-domain] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1694637761147] [levelValue: 800] EclipseLink, version: Eclipse Persistence Services - 4.0.1.payara-p1.v202304041433
+
+[2023-09-13T20:42:42.262+0000] [] [FINE] [] [org.eclipse.persistence.session./file:/tmp/payaramicro-rt17379473131077991542tmp/applications/chat-webapp/WEB-INF/lib/chat-domain-1.0.0.jar_chat-domain.sql] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1694637762262] [levelValue: 500] SELECT * FROM SEQUENCE WHERE SEQ_NAME = 'SEQ_GEN'
+
+[2023-09-13T20:42:42.273+0000] [] [FINE] [] [org.eclipse.persistence.session./file:/tmp/payaramicro-rt17379473131077991542tmp/applications/chat-webapp/WEB-INF/lib/chat-domain-1.0.0.jar_chat-domain.sql] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1694637762273] [levelValue: 500] INSERT INTO SEQUENCE(SEQ_NAME, SEQ_COUNT) values ('SEQ_GEN', 0)
+
+[2023-09-13T20:42:42.278+0000] [] [FINE] [] [org.eclipse.persistence.session./file:/tmp/payaramicro-rt17379473131077991542tmp/applications/chat-webapp/WEB-INF/lib/chat-domain-1.0.0.jar_chat-domain.sql] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1694637762278] [levelValue: 500] SELECT * FROM SEQUENCE WHERE SEQ_NAME = 'SEQ_GEN'
+
+[2023-09-13T20:42:42.341+0000] [] [INFO] [] [org.jboss.weld.Version] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1694637762341] [levelValue: 800] WELD-000900: 5.0.1 (Final)
+
+[2023-09-13T20:42:42.609+0000] [] [INFO] [] [] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1694637762609] [levelValue: 800] Cannot find the resource bundle for the name com.sun.logging.enterprise.system.container.ejb for class org.glassfish.ejb.security.application.EjbSecurityComponentInvocationHandler using fish.payara.micro.boot.loader.ExplodedURLClassloader@506e1b77
+
+[2023-09-13T20:42:42.674+0000] [] [INFO] [] [] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1694637762674] [levelValue: 800] Cannot find the resource bundle for the name com.sun.logging.enterprise.system.container.ejb for class com.sun.ejb.EJBUtils using fish.payara.micro.boot.loader.ExplodedURLClassloader@506e1b77
+
+[2023-09-13T20:42:42.738+0000] [] [INFO] [AS-EJB-00054] [jakarta.enterprise.ejb.container] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1694637762738] [levelValue: 800] Portable JNDI names for EJB InitBean: [java:global/chat-webapp/InitBean, java:global/chat-webapp/InitBean!edu.stevens.cs548.chat.init.InitBean]
+
+[2023-09-13T20:42:46.419+0000] [] [INFO] [] [fish.payara.micro.cdi.extension.ClusteredCDIEventBusImpl] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1694637766419] [levelValue: 800] Clustered CDI Event bus initialized
+
+[2023-09-13T20:42:46.662+0000] [] [INFO] [] [javax.enterprise.system.core] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1694637766662] [levelValue: 800] chat-webapp was successfully deployed in 14,360 milliseconds.
+
+[2023-09-13T20:42:46.669+0000] [] [INFO] [] [PayaraMicro] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1694637766669] [levelValue: 800] Deployed 1 archive(s)
+
+[2023-09-13T20:42:46.742+0000] [] [INFO] [] [edu.stevens.cs548.chat.init.InitBean] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1694637766742] [levelValue: 800] Initilizing by emptying the chat message database....
+
+[2023-09-13T20:42:46.836+0000] [] [INFO] [] [edu.stevens.cs548.chat.init.InitBean] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1694637766836] [levelValue: 800] ...chat message database has been cleared.
+
+[2023-09-13T20:42:46.855+0000] [] [INFO] [AS-WEB-GLUE-00130] [jakarta.enterprise.web] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1694637766855] [levelValue: 800] Invalid Session Management Configuration for non-distributable app [chat-webapp] - defaulting to memory: persistence-type = [hazelcast] / persistenceFrequency = [web-method] / persistenceScope = [modified-session]
+
+[2023-09-13T20:42:46.929+0000] [] [INFO] [] [org.glassfish.soteria.servlet.SamRegistrationInstaller] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1694637766929] [levelValue: 800] Initializing Soteria 3.0.1.payara-p1 for context '/chat'
+
+[2023-09-13T20:42:47.022+0000] [] [INFO] [faces.config.listener.version] [jakarta.enterprise.resource.webcontainer.faces.config] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1694637767022] [levelValue: 800] Initializing Mojarra 4.0.0.payara-p2 for context '/chat'
+
+[2023-09-13T20:42:48.319+0000] [] [INFO] [AS-WEB-GLUE-00172] [jakarta.enterprise.web] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1694637768319] [levelValue: 800] Loading application [chat-webapp] at [/chat]
+
+[2023-09-13T20:42:48.357+0000] [] [INFO] [] [PayaraMicro] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1694637768357] [levelValue: 800] [[
+  {
+    "Instance Configuration": {
+        "Host": "b70af771281b",
+        "Http Port(s)": "8080",
+        "Https Port(s)": "",
+        "Instance Name": "Lovely-Batfish",
+        "Instance Group": "MicroShoal",
+        "Hazelcast Member UUID": "05f5b025-b32f-4a81-b06c-1d10ac282661",
+        "Deployed": [
+            {
+                "Name": "chat-webapp",
+                "Type": "war",
+                "Context Root": "/chat"
+            }
+        ]
+    }
+}]]
+
+[2023-09-13T20:42:48.369+0000] [] [INFO] [] [PayaraMicro] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1694637768369] [levelValue: 800] [[
+
+Payara Micro URLs:
+http://b70af771281b:8080/chat
+
+]]
+
+[2023-09-13T20:42:48.369+0000] [] [INFO] [] [PayaraMicro] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1694637768369] [levelValue: 800] Payara Micro 6.2023.6 #badassmicrofish (build 918) ready in 27,711 (ms)
+
+[ec2-user@ip-172-31-31-147 ~]$ sudo su -
+Last login: Wed Sep 13 20:17:46 UTC 2023 on pts/0
+[root@ip-172-31-31-147 ~]# vi /etc/systemd/system/cs548db.service
+[root@ip-172-31-31-147 ~]#  [New] 9L, 194B written
+[root@ip-172-31-31-147 ~]# sudo systemctl start cs548db
+[root@ip-172-31-31-147 ~]# sudo systemctl enable cs548db
+Created symlink from /etc/systemd/system/multi-user.target.wants/cs548db.service to /etc/systemd/system/cs548db.service.
+[root@ip-172-31-31-147 ~]# vi /etc/systemd/system/chat.service
+[root@ip-172-31-31-147 ~]#  [New] 9L, 188B written
+[root@ip-172-31-31-147 ~]#  [New] 9L, 188B written
+[root@ip-172-31-31-147 ~]# sudo systemctl start chat
+[root@ip-172-31-31-147 ~]# sudo systemctl enable chat
+Created symlink from /etc/systemd/system/multi-user.target.wants/chat.service to /etc/systemd/system/chat.service.

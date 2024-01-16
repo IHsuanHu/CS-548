@@ -1,0 +1,73 @@
+{
+	"$id": "https://cs548.stevens.edu/clinic/treatment",
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"description": "JSON Schema for treatments",
+	"oneOf" : [
+		{ "$ref" : "#/$defs/drug-treatment" },
+		{ "$ref" : "#/$defs/surgery-treatment" },
+		{ "$ref" : "#/$defs/physiotherapy-treatment" },
+		{ "$ref" : "#/$defs/radiology-treatment" }
+	],
+	"$defs": {
+		"base": {
+			"type": "object",
+			"properties": {
+				"type-tag": { "enum": ["SURGERY", "DRUGTREATMENT", "RADIOLOGY", "PHYSIOTHERAPY"] },
+				"id": { "type": "string", "format": "uuid" },
+				"patient-id": { "type": "string", "format": "uuid" },
+				"patient-name": { "type": "string" },
+				"provider-id": { "type": "string", "format": "uuid" },
+				"provider-name": { "type": "string" },
+				"diagnosis": { "type": "string" },
+				"followup-treatments": { "type": "array", "items": { "$ref": "#" } }
+			},
+			"required": [
+				"id",
+				"type-tag",
+				"patient-id",
+				"patient-name",
+				"provider-id",
+				"provider-name",
+				"diagnosis",
+				"followup-treatments"
+			]
+		},
+		"drug-treatment": {
+			"allOf": [ { "$ref" : "#/$defs/base" } ],
+			"properties": {
+				"drug": { "type": "string" },
+				"dosage": { "type": "number" },
+				"start-date": { "type": "string", "format": "date" },
+				"end-date": { "type": "string", "format": "date" },
+				"frequency": { "type": "integer" }
+			},
+			"required": ["drug", "dosage", "start-date", "end-date", "frequency"],
+			"unevaluatedProperties": false
+		},
+		"surgery-treatment": {
+			"allOf": [ { "$ref" : "#/$defs/base" } ],
+			"properties": {
+				"discharge-instructions": { "type": "string" },
+				"surgery-date": { "type": "string", "format": "date" }
+			},
+			"required": ["discharge-instructions", "surgery-date"],
+			"unevaluatedProperties": false
+		},
+		"physiotherapy-treatment": {
+			"allOf": [ { "$ref" : "#/$defs/base" } ],
+			"properties": {
+				"treatment-dates": { "type": "array", "items": { "format": "date" } }
+			},
+			"required": ["treatment-dates"],
+			"unevaluatedProperties": false
+		},
+		"radiology-treatment": {
+			"allOf": [ { "$ref" : "#/$defs/base" } ],
+			"properties": {
+				"treatment-dates": { "type": "array", "items": { "format": "date" } }
+			},
+			"required": ["treatment-dates"],
+			"unevaluatedProperties": false
+		}
+	}
+}

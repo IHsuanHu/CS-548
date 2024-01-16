@@ -1,0 +1,58 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "VisualEditor0",
+      "Effect": "Allow",
+      "Action": [
+        "ecr:PutImageTagMutability",
+        "ecr:StartImageScan",
+        "ecr:DescribeImageReplicationStatus",
+        "ecr:ListTagsForResource",
+        "ecr:UploadLayerPart",
+        "ecr:BatchDeleteImage",
+        "ecr:ListImages",
+        "ecr:BatchGetRepositoryScanningConfiguration",
+        "ecr:DeleteRepository",
+        "ecr:CompleteLayerUpload",
+        "ecr:TagResource",
+        "ecr:DescribeRepositories",
+        "ecr:BatchCheckLayerAvailability",
+        "ecr:ReplicateImage",
+        "ecr:GetLifecyclePolicy",
+        "ecr:PutLifecyclePolicy",
+        "ecr:DescribeImageScanFindings",
+        "ecr:GetLifecyclePolicyPreview",
+        "ecr:PutImageScanningConfiguration",
+        "ecr:GetDownloadUrlForLayer",
+        "ecr:DeleteLifecyclePolicy",
+        "ecr:PutImage",
+        "ecr:UntagResource",
+        "ecr:BatchGetImage",
+        "ecr:DescribeImages",
+        "ecr:StartLifecyclePolicyPreview",
+        "ecr:InitiateLayerUpload",
+        "ecr:GetRepositoryPolicy"
+      ],
+      "Resource": "arn:aws:ecr:*:466942225965:repository/*"
+    },
+    {
+      "Sid": "VisualEditor1",
+      "Effect": "Allow",
+      "Action": [
+        "ecr:GetRegistryPolicy",
+        "ecr:BatchImportUpstreamImage",
+        "ecr:CreateRepository",
+        "ecr:DescribeRegistry",
+        "ecr:DescribePullThroughCacheRules",
+        "ecr:GetAuthorizationToken",
+        "ecr:PutRegistryScanningConfiguration",
+        "ecr:CreatePullThroughCacheRule",
+        "ecr:DeletePullThroughCacheRule",
+        "ecr:GetRegistryScanningConfiguration",
+        "ecr:PutReplicationConfiguration"
+      ],
+      "Resource": "*"
+    }
+  ]
+}
