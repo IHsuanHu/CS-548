@@ -2,17 +2,26 @@
 	"$id": "https://cs548.stevens.edu/clinic/treatment",
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"description": "JSON Schema for treatments",
-	"oneOf" : [
-		{ "$ref" : "#/$defs/drug-treatment" },
-		{ "$ref" : "#/$defs/surgery-treatment" },
-		{ "$ref" : "#/$defs/physiotherapy-treatment" },
-		{ "$ref" : "#/$defs/radiology-treatment" }
+	"allOf": [
+		{"$ref": "#/$defs/base"	},
+		{ "if": {"properties": {
+			"type-tag": {"const": "DRUGTREATMENT"}}},
+			"then": {"$ref": "#/$defs/drug-treatment"}},
+		{"if": {"properties": {
+			"type-tag": {"const": "RADIOLOGY"}}},
+			"then": {"$ref": "#/$defs/radiology-treatment"}},
+		{"if": {"properties": {
+			"type-tag": {"const": "PHYSIOTHERAPY"}}},
+			"then": {"$ref": "#/$defs/physiotherapy-treatment"}},
+		{"if": {"properties": {
+			"type-tag": {"const": "SURGERY"}}},
+			"then": {"$ref": "#/$defs/surgery-treatment"}}
 	],
 	"$defs": {
 		"base": {
 			"type": "object",
 			"properties": {
-				"type-tag": { "enum": ["SURGERY", "DRUGTREATMENT", "RADIOLOGY", "PHYSIOTHERAPY"] },
+				"type-tag": { "enum": ["DRUGTREATMENT", "SURGERY", "PHYSIOTHERAPY","RADIOLOGY"] },
 				"id": { "type": "string", "format": "uuid" },
 				"patient-id": { "type": "string", "format": "uuid" },
 				"patient-name": { "type": "string" },
