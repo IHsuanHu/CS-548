@@ -6,7 +6,7 @@ After finish the code, use Maven build tool in Intellij to build .jar file. Here
 
 clinic-root -> Lifecycle -> clean
 install
-There will be a clinic-webapp.war in the folder: C:\Users\user\tmp\cs548
+There will be a clinic-webapp.war in the folder: ```C:\Users\user\tmp\cs548```
 
 ### Build webapp docker container
 1. With the docker file below, run command line ```docker build -t ca548/clinic```
