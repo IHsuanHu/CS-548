@@ -1,4 +1,5 @@
 # JSON Schema and Binding
+We will be working with JSON data, so in this assignment we use some tools that are useful for JSON data processing.  We use the Gson library to serialize and deserialize data as JSON.  We also look at a schema for the form of JSON data we will see in future assignments, and how to perform validation on the data.
 
 ### Assignment code
 After finish the code, use Maven build tool in Intellij to build .jar file. Here are steps:
