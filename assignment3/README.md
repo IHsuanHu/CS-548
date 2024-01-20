@@ -6,7 +6,7 @@ After finish the code, use Maven build tool in Intellij to build .jar file. Here
 
 1. clinic-data-model -> Lifecycle -> clean
 2. install
-3. There will be a .jar files; clinicdb.jar in the folder: C:\Users\user\tmp\cs548
+3. There will be a .jar files; clinicdb.jar in the folder: ```C:\Users\user\tmp\cs548```
 
 ### Create a database on EC2 by using docker container
 1. Please see assignment 1 to initialize the database
