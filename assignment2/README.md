@@ -5,7 +5,7 @@ We will be working with JSON data, so in this assignment we use some tools that 
 After finish the code, use Maven build tool in Intellij to build .jar file. Here are steps:
 1. clinic-root -> Lifecycle -> clean
 2. install
-3. There will be two .jar files; jsonbind.jar and jsonschema.jar in the folder: C:\Users\user\tmp\cs548
+3. There will be two .jar files; jsonbind.jar and jsonschema.jar in the folder: ```C:\Users\user\tmp\cs548```
 
 ### Execute jsonbind.jar
 1. In the root directory, run this command line: ```Java -jar jsonbind.jar```
