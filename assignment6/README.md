@@ -28,7 +28,7 @@ ENV JVM_ARGS="--add-opens=java.base/java.io=ALL-UNNAMED"
 1. Create a container and initialize a postgresql database in it, which is similar to the previous assignment
 
 ### Webapp connect to database
-1. run this command line: ```docker run -d --name chat --network cs548-network -p 8080:8080 -p 8181:8181 -e DATABASE_USERNAME=cs548user -e DATABASE_PASSWORD=0000 -e DATABASE=cs548 -e DATABASE_HOST=cs548db cs548/chat```
+1. run this command line: ```docker run -d --name chat --network cs548-network -p 8080:8080 -p 8181:8181 -e DATABASE_USERNAME=cs548user -e DATABASE_PASSWORD=xxxx -e DATABASE=cs548 -e DATABASE_HOST=cs548db cs548/chat```
 2. run ```docker logs containerID``` to check the deployment is successed or not; Payara Micro URLs will show up.
 
 ### Access to application
@@ -36,7 +36,7 @@ ENV JVM_ARGS="--add-opens=java.base/java.io=ALL-UNNAMED"
 2. Use this url to have an access to web application: ```http://localhost:8080/clinic```
 
 ### REST application connect to database
-1. run this command line: ```docker run -d --name clinic-rest --network cs548-network -p 9090:8080 -e DATABASE_USERNAME=cs548user -e DATABASE_PASSWORD=0000 -e DATABASE=cs548 -e DATABASE_HOST=cs548db cs548/clinic-rest```
+1. run this command line: ```docker run -d --name clinic-rest --network cs548-network -p 9090:8080 -e DATABASE_USERNAME=cs548user -e DATABASE_PASSWORD=xxxx -e DATABASE=cs548 -e DATABASE_HOST=cs548db cs548/clinic-rest```
 2. run ```docker logs containerID``` to check the deployment is successed or not; Payara Micro URLs will show up.
 
 ### Access to WADL
