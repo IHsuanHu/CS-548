@@ -45,5 +45,5 @@ ENV JVM_ARGS="--add-opens=java.base/java.io=ALL-UNNAMED"
 
 ### Use REST clinic side to connect to REST application
 1. In the root directory, run this command line: ```java -jar clinic-rest-client.jar --server http://localhost:9090/api/```
-2. Use ```help``` to check all the command in the project.
+2. Use ```help``` to check all the command in the project and add more data.
 
