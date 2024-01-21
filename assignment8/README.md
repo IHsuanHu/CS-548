@@ -7,7 +7,7 @@ After finish the code, use Maven build tool in Intellij to build .jar file. Here
 
 1. clinic-root -> Lifecycle -> clean
 2. install
-3 There will be clinic-webapp.war, clinic-rest.war, clinic-rest-client.jar, and clinic-domain.war in the folder: C:\Users\user\tmp\cs548
+3. There will be clinic-webapp.war, clinic-rest.war, clinic-rest-client.jar, and clinic-domain.war in the folder: C:\Users\user\tmp\cs548
 
 ### Build domain docker container
 With the docker file below, run command line ```docker build -t cs548/clinic-domain .```
