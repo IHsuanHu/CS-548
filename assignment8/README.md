@@ -2,14 +2,14 @@
 
 Micro Profile defines a set of APIs for Java microservices.  It borrows some aspects of Jakarta EE, including CDI and JAX-RS (but not JPA or JMS).  It adds other APIs for tracing, configuration, health checking and fault tolerance, as well as a declarative API for REST clients. In this assignment, you will deploy the applications from previous assignments as microservices, using Payara Micro.
 
-### Assignment code
+## Assignment code
 After finish the code, use Maven build tool in Intellij to build .jar file. Here are steps:
 
 1. clinic-root -> Lifecycle -> clean
 2. install
 3. There will be clinic-webapp.war, clinic-rest.war, clinic-rest-client.jar, and clinic-domain.war in the folder: C:\Users\user\tmp\cs548
 
-### Build domain docker container
+## Build domain docker container
 With the docker file below, run command line ```docker build -t cs548/clinic-domain .```
 ```Dockerfile
 FROM payara/micro:6.2023.2-jdk17
@@ -17,7 +17,7 @@ COPY --chown=payara:payara clinic-domain.war ${DEPLOY_DIR}
 CMD [ "--contextroot", "api", "--deploy", "/opt/payara/deployments/clinic-domain.war" ]
 ```
 
-### Build rest docker container
+## Build rest docker container
 With the docker file below, run command line ```docker build -t cs548/rest .```
 ```Dockerfile
 FROM payara/micro:6.2023.2-jdk17
@@ -26,7 +26,7 @@ CMD [ "--contextroot", "api", "--deploy", "/opt/payara/deployments/clinic-rest.w
 ENV JVM_ARGS="--add-opens=java.base/java.io=ALL-UNNAMED"
 ```
 
-### Build webapp docker container
+## Build webapp docker container
 With the docker file below, run command line ```docker build -t cs548/chat .```
 ```Dockerfile
 FROM payara/micro:6.2023.2-jdk17
@@ -34,7 +34,7 @@ COPY --chown=payara:payara clinic-webapp.war ${DEPLOY_DIR}
 CMD [ "--contextroot", "clinic","--deploy", "/opt/payara/deployments/clinic-webapp.war" ]
 ENV JVM_ARGS="--add-opens=java.base/java.io=ALL-UNNAMED"
 ```
-### Database creation
+## Database creation
 Create a container and initialize a postgresql database in it, which is similar to the previous assignment.
 
 ```bash
