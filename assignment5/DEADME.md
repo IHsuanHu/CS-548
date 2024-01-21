@@ -23,3 +23,7 @@ ENV JVM_ARGS="--add-opens=java.base/java.io=ALL-UNNAMED"
 ### Webapp connect to database
 1. run this command line: ```docker run -d --name clinic --network cs548-network -p 8080:8080 -p 8181:8181 -e DATABASE_USERNAME=cs548user -e DATABASE_PASSWORD=xxxx -e DATABASE=cs548 -e DATABASE_HOST=cs548db cs548/clinic```
 2. run ```docker logs containerID``` to check the deployment is successed or not; Payara Micro URLs will show up.
+
+### Access to application
+1. Open a browser
+2. Use this url to have an access to web application: ```http://localhost:8080/clinic```
