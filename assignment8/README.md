@@ -49,17 +49,17 @@ createuser cs548user -P --createdb -h cs548db -U postgres
 1. run this command line: ```docker run -d --name clinic-domain --network cs548-network -p 5050:8080 -e DATABASE_USERNAME=cs548user -e DATABASE_PASSWORD=xxxx -e DATABASE=cs548 -e DATABASE_HOST=cs548db cs548/clinic-domain```
 2. run ```docker logs containerID``` to check the deployment is successed or not; Payara Micro URLs will show up.
 3. Access to WADL and health ckeck:
-  1. Open a browser
-  2. Use this url to have an access to WADL: ```http://localhost:8080/api/application.wadl```
-  3. Use this urls to have an access to do health check: ```http://localhost:8080/health/live```, ```http://localhost:8080/health/ready```
+  - Open a browser
+  - Use this url to have an access to WADL: ```http://localhost:8080/api/application.wadl```
+  - Use this urls to have an access to do health check: ```http://localhost:8080/health/live```, ```http://localhost:8080/health/ready```
 
 ### REST connect to microservice
 1. run this command line: ```docker run -d --name clinic-rest --network cs548-network -p 9090:8080 -e DATABASE_USERNAME=cs548user -e DATABASE_PASSWORD=xxxx -e DATABASE=cs548 -e DATABASE_HOST=cs548db cs548/rest```
 2. run ```docker logs containerID``` to check the deployment is successed or not; Payara Micro URLs will show up.
 3. Access to WADL and health ckeck:
-  1. Open a browser
-  2. Use this url to have an access to WADL: ```http://localhost:9090/api/application.wadl```
-  3. Use this urls to have an access to do health check: ```http://localhost:9090/health/live```, ```http://localhost:9090/health/ready```
+  - Open a browser
+  - Use this url to have an access to WADL: ```http://localhost:9090/api/application.wadl```
+  - Use this urls to have an access to do health check: ```http://localhost:9090/health/live```, ```http://localhost:9090/health/ready```
 
 ### Webapp connect to microservice
 1. run this command line: ```docker run -d --name chat --network cs548-network -p 8080:8080 -e DATABASE_USERNAME=cs548user -e DATABASE_PASSWORD=xxxx -e DATABASE=cs548 -e DATABASE_HOST=cs548db cs548/chat```
